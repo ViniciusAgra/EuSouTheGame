@@ -7,8 +7,10 @@ from telas.menu import MenuScreen
 #from telas.personalizado import PersonalizadoScreen
 from telas.splash import SplashScreen
 #from telas.temas import TemasScreen
+from database import Database
 
 def main(page: ft.Page):
+    db = Database()
     def navigate(screen, **kwargs):
         page.clean()
         if screen == "splash":
