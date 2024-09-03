@@ -24,7 +24,7 @@ class Database:
                            )
         self.conn.commit()
 
-    def verify_user(self, email, password):
+    def verify_user(self, password):
         self.cursor.execute('''SELECT * FROM users WHERE password = ?''', 
                             (password))
         return self.cursor.fetchone()

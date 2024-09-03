@@ -27,4 +27,4 @@ class SplashScreen:
         time.sleep(5)
 
         # Após o delay, navega para a tela de navegação
-        self.navigate("navegacao")  # Chama a função de navegação
+        self.navigate("menu")  # Chama a função de navegação

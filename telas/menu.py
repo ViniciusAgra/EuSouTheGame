@@ -15,7 +15,7 @@ class MenuScreen:
         self.page.window_close()
 
     def show(self):
-        self.page.title = "Navegação"
+        self.page.title = "Menu"
 
         menu_container = ft.Container(
             content=ft.Column(
