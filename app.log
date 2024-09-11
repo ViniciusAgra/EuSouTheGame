@@ -1,0 +1,1380 @@
+2024-09-11 14:22:45,848 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:22:45,848 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:22:45,848 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:22:45,848 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:22:45,848 - INFO - Starting up TCP server on localhost:49924
+2024-09-11 14:22:45,865 - INFO - Flet app has started...
+2024-09-11 14:22:45,865 - INFO - App URL: tcp://localhost:49924
+2024-09-11 14:22:45,865 - INFO - Starting Flet View app...
+2024-09-11 14:22:45,865 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:22:47,250 - DEBUG - Connected new TCP client
+2024-09-11 14:22:47,251 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:22:47,251 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:22:47,252 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:22:47,252 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:22:47,252 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:22:47,252 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:22:47,252 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:22:47,252 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:22:47,253 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:22:47,253 - INFO - App session started
+2024-09-11 14:22:47,254 - DEBUG - sent to TCP: 605
+2024-09-11 14:22:47,265 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:22:47,265 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:22:47,265 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:22:47,266 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:22:47,266 - DEBUG - sent to TCP: 56
+2024-09-11 14:22:47,266 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#6a0dad","expand":"1"},{"t":"column","i":"_3","p":"_2","c":["_4"],"alignment":"center","n":"content","spacing":"20"},{"t":"image","i":"_4","p":"_3","c":[],"height":"200","src":"img\\logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:22:47,266 - DEBUG - sent to TCP: 589
+2024-09-11 14:22:50,730 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"42.0","windowleft":"265.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:22:50,730 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"42.0","windowleft":"265.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:22:50,731 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"moved"}}
+2024-09-11 14:22:50,731 - DEBUG - page.on_event_async: page window_event moved
+2024-09-11 14:22:52,267 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:22:52,267 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:22:52,267 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 14:22:52,267 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:22:52,267 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:22:52,267 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_6"],"at":"0"},{"t":"container","i":"_6","p":"_1","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_7","p":"_6","c":["_8","_9","_10"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_8","p":"_7","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_9","p":"_7","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_10","p":"_7","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:22:52,268 - DEBUG - sent to TCP: 56
+2024-09-11 14:22:52,268 - DEBUG - sent to TCP: 780
+2024-09-11 14:22:54,488 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_10","eventName":"click","eventData":""}}
+2024-09-11 14:22:54,488 - DEBUG - page.on_event_async: _10 click 
+2024-09-11 14:22:54,489 - DEBUG - _process_command: set ['page'] {'windowclose': '1726075374.4888904'}
+2024-09-11 14:22:54,489 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1726075374.4888904"}]}}]}
+2024-09-11 14:22:54,489 - DEBUG - sent to TCP: 148
+2024-09-11 14:22:54,524 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:22:54,524 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:22:54,525 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:22:54,525 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:22:54,584 - DEBUG - Flet View process 9444
+2024-09-11 14:22:54,585 - DEBUG - Closing connection...
+2024-09-11 14:22:54,585 - DEBUG - Disconnecting all pages...
+2024-09-11 14:22:54,585 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:22:54,585 - DEBUG - Shutting down thread pool...
+2024-09-11 14:25:06,048 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:25:06,048 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:25:06,048 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:25:06,048 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:25:06,048 - INFO - Starting up TCP server on localhost:49959
+2024-09-11 14:25:06,064 - INFO - Flet app has started...
+2024-09-11 14:25:06,064 - INFO - App URL: tcp://localhost:49959
+2024-09-11 14:25:06,064 - INFO - Starting Flet View app...
+2024-09-11 14:25:06,064 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:25:06,241 - DEBUG - Connected new TCP client
+2024-09-11 14:25:06,241 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:25:06,242 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:25:06,243 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:25:06,244 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:25:06,244 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:25:06,244 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:25:06,244 - INFO - App session started
+2024-09-11 14:25:06,245 - DEBUG - sent to TCP: 605
+2024-09-11 14:25:06,251 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:25:06,251 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:25:06,252 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:25:06,252 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:25:06,252 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#6a0dad","expand":"1"},{"t":"column","i":"_3","p":"_2","c":["_4"],"alignment":"center","n":"content","spacing":"20"},{"t":"image","i":"_4","p":"_3","c":[],"height":"200","src":"img\\logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:25:06,252 - DEBUG - sent to TCP: 56
+2024-09-11 14:25:06,253 - DEBUG - sent to TCP: 589
+2024-09-11 14:25:08,506 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"100.0","windowleft":"376.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:25:08,506 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"100.0","windowleft":"376.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:25:08,506 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"moved"}}
+2024-09-11 14:25:08,506 - DEBUG - page.on_event_async: page window_event moved
+2024-09-11 14:25:09,050 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:25:09,050 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:25:09,052 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"100.0","windowleft":"376.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 14:25:09,052 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"100.0","windowleft":"376.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 14:25:09,052 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 14:25:09,052 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 14:25:11,254 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:25:11,254 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:25:11,254 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 14:25:11,254 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:25:11,254 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:25:11,254 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_6"],"at":"0"},{"t":"container","i":"_6","p":"_1","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_7","p":"_6","c":["_8","_9","_10"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_8","p":"_7","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_9","p":"_7","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_10","p":"_7","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:25:11,255 - DEBUG - sent to TCP: 56
+2024-09-11 14:25:11,255 - DEBUG - sent to TCP: 780
+2024-09-11 14:26:06,079 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:26:06,079 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:26:06,079 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:26:06,079 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:26:06,079 - INFO - Starting up TCP server on localhost:49977
+2024-09-11 14:26:06,095 - INFO - Flet app has started...
+2024-09-11 14:26:06,095 - INFO - App URL: tcp://localhost:49977
+2024-09-11 14:26:06,095 - INFO - Starting Flet View app...
+2024-09-11 14:26:06,095 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:26:06,255 - DEBUG - Connected new TCP client
+2024-09-11 14:26:06,255 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:26:06,256 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:26:06,257 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:26:06,257 - INFO - App session started
+2024-09-11 14:26:06,258 - DEBUG - sent to TCP: 605
+2024-09-11 14:26:06,259 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:26:06,259 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:26:06,260 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:26:06,260 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:26:06,261 - DEBUG - sent to TCP: 56
+2024-09-11 14:26:06,261 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#6a0dad","expand":"1"},{"t":"column","i":"_3","p":"_2","c":["_4"],"alignment":"center","n":"content","spacing":"20"},{"t":"image","i":"_4","p":"_3","c":[],"height":"200","src":"img\\logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:26:06,262 - DEBUG - sent to TCP: 589
+2024-09-11 14:26:11,262 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:26:11,262 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:26:11,264 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 14:26:11,264 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:26:11,265 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:26:11,265 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_6"],"at":"0"},{"t":"container","i":"_6","p":"_1","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_7","p":"_6","c":["_8","_9","_10"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_8","p":"_7","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_9","p":"_7","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_10","p":"_7","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:26:11,266 - DEBUG - sent to TCP: 56
+2024-09-11 14:26:11,268 - DEBUG - sent to TCP: 780
+2024-09-11 14:26:45,152 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:26:45,153 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:26:45,153 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"maximize"}}
+2024-09-11 14:26:45,153 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:26:45,153 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"moved"}}
+2024-09-11 14:26:45,153 - DEBUG - page.on_event_async: page window_event maximize
+2024-09-11 14:26:45,153 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:26:45,153 - DEBUG - page.on_event_async: page window_event moved
+2024-09-11 14:26:45,400 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"1920.0","height":"1017.0","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:26:45,400 - DEBUG - page.on_event_async: page change [{"i":"page","width":"1920.0","height":"1017.0","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:26:45,400 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":1920.0,\"height\":1017.0}"}}
+2024-09-11 14:26:45,400 - DEBUG - page.on_event_async: page resized {"width":1920.0,"height":1017.0}
+2024-09-11 14:26:46,872 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_10","eventName":"click","eventData":""}}
+2024-09-11 14:26:46,872 - DEBUG - page.on_event_async: _10 click 
+2024-09-11 14:26:46,873 - DEBUG - _process_command: set ['page'] {'windowclose': '1726075606.8734756'}
+2024-09-11 14:26:46,873 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1726075606.8734756"}]}}]}
+2024-09-11 14:26:46,873 - DEBUG - sent to TCP: 148
+2024-09-11 14:26:46,911 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:26:46,911 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:26:46,911 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:26:46,912 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:26:47,031 - DEBUG - Flet View process 1604
+2024-09-11 14:26:47,032 - DEBUG - Closing connection...
+2024-09-11 14:26:47,032 - DEBUG - Disconnecting all pages...
+2024-09-11 14:26:47,032 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:26:47,032 - DEBUG - Shutting down thread pool...
+2024-09-11 14:32:57,380 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:32:57,388 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:32:57,388 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:32:57,388 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:32:57,389 - INFO - Starting up TCP server on localhost:50461
+2024-09-11 14:32:57,389 - INFO - Flet app has started...
+2024-09-11 14:32:57,389 - INFO - App URL: tcp://localhost:50461
+2024-09-11 14:32:57,389 - INFO - Starting Flet View app...
+2024-09-11 14:32:57,396 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:32:57,595 - DEBUG - Connected new TCP client
+2024-09-11 14:32:57,599 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:32:57,600 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:32:57,601 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:32:57,602 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:32:57,602 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:32:57,602 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:32:57,603 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:32:57,604 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:32:57,604 - INFO - App session started
+2024-09-11 14:32:57,605 - DEBUG - sent to TCP: 605
+2024-09-11 14:32:57,608 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:32:57,608 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:32:57,609 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:32:57,609 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:32:57,610 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#6a0dad","expand":"1"},{"t":"column","i":"_3","p":"_2","c":["_4"],"alignment":"center","n":"content","spacing":"20"},{"t":"image","i":"_4","p":"_3","c":[],"height":"200","src":"img\\logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:32:57,610 - DEBUG - sent to TCP: 56
+2024-09-11 14:32:57,611 - DEBUG - sent to TCP: 589
+2024-09-11 14:32:58,994 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:32:58,994 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:32:58,994 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 14:32:58,995 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 14:32:59,165 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:32:59,166 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:32:59,166 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 14:32:59,166 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 14:33:00,651 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:33:00,652 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:33:00,653 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 14:33:00,653 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 14:33:00,653 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 14:33:00,653 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 14:33:01,906 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"resume"}}
+2024-09-11 14:33:01,907 - DEBUG - page.on_event_async: page app_lifecycle_state_change resume
+2024-09-11 14:33:01,909 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:33:01,909 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:33:01,909 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 14:33:01,910 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 14:33:02,182 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:33:02,182 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:33:02,183 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 14:33:02,184 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 14:33:02,184 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 14:33:02,184 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 14:33:02,611 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:33:02,611 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:33:02,611 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 14:33:02,611 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:33:02,612 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:33:02,612 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_6"],"at":"0"},{"t":"container","i":"_6","p":"_1","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_7","p":"_6","c":["_8","_9","_10"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_8","p":"_7","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_9","p":"_7","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_10","p":"_7","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:33:02,612 - DEBUG - sent to TCP: 56
+2024-09-11 14:33:02,612 - DEBUG - sent to TCP: 780
+2024-09-11 14:33:04,137 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"resume"}}
+2024-09-11 14:33:04,138 - DEBUG - page.on_event_async: page app_lifecycle_state_change resume
+2024-09-11 14:33:04,139 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:33:04,140 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:33:04,140 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 14:33:04,140 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 14:33:05,594 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:33:05,594 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:33:05,596 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 14:33:05,596 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 14:33:05,596 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 14:33:05,596 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 14:33:06,510 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"resume"}}
+2024-09-11 14:33:06,511 - DEBUG - page.on_event_async: page app_lifecycle_state_change resume
+2024-09-11 14:33:06,512 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:33:06,512 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:33:06,512 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 14:33:06,512 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 14:33:07,072 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:33:07,072 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:33:07,074 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 14:33:07,074 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 14:33:07,074 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 14:33:07,075 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 14:45:55,246 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:45:55,247 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:45:55,247 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:45:55,247 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:45:55,248 - INFO - Starting up TCP server on localhost:50961
+2024-09-11 14:45:55,253 - INFO - Flet app has started...
+2024-09-11 14:45:55,253 - INFO - App URL: tcp://localhost:50961
+2024-09-11 14:45:55,253 - INFO - Starting Flet View app...
+2024-09-11 14:45:55,254 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:45:55,432 - DEBUG - Connected new TCP client
+2024-09-11 14:45:55,433 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:45:55,433 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:45:55,434 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:45:55,435 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:45:55,435 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:45:55,435 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:45:55,435 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:45:55,435 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:45:55,435 - INFO - App session started
+2024-09-11 14:45:55,435 - DEBUG - sent to TCP: 605
+2024-09-11 14:45:55,436 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:45:55,437 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:45:55,437 - DEBUG - sent to TCP: 56
+2024-09-11 14:45:55,462 - DEBUG - _process_command: error ["There was an error while processing your request: module 'flet' has no attribute 'BoxDecoration'"] {}
+2024-09-11 14:45:55,462 - DEBUG - __send: {"action":"sessionCrashed","payload":{"message":"There was an error while processing your request: module 'flet' has no attribute 'BoxDecoration'"}}
+2024-09-11 14:45:55,462 - DEBUG - sent to TCP: 152
+2024-09-11 14:45:57,402 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:45:57,402 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:45:57,403 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:45:57,403 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:45:57,507 - DEBUG - Flet View process 14600
+2024-09-11 14:45:57,507 - DEBUG - Closing connection...
+2024-09-11 14:45:57,507 - DEBUG - Disconnecting all pages...
+2024-09-11 14:45:57,508 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:45:57,508 - DEBUG - Shutting down thread pool...
+2024-09-11 14:53:37,046 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:53:37,047 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:53:37,047 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:53:37,047 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:53:37,048 - INFO - Starting up TCP server on localhost:51264
+2024-09-11 14:53:37,053 - INFO - Flet app has started...
+2024-09-11 14:53:37,053 - INFO - App URL: tcp://localhost:51264
+2024-09-11 14:53:37,053 - INFO - Starting Flet View app...
+2024-09-11 14:53:37,054 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:53:37,227 - DEBUG - Connected new TCP client
+2024-09-11 14:53:37,228 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:53:37,228 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:53:37,229 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:53:37,229 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:53:37,229 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:53:37,229 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:53:37,229 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:53:37,229 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:53:37,229 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:53:37,229 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:53:37,230 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:53:37,230 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:53:37,230 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:53:37,230 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:53:37,230 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:53:37,230 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:53:37,230 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:53:37,230 - INFO - App session started
+2024-09-11 14:53:37,231 - DEBUG - sent to TCP: 605
+2024-09-11 14:53:37,232 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:53:37,232 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:53:37,233 - DEBUG - sent to TCP: 56
+2024-09-11 14:53:37,259 - DEBUG - _process_command: error ["There was an error while processing your request: module 'flet' has no attribute 'BackgroundImage'"] {}
+2024-09-11 14:53:37,259 - DEBUG - __send: {"action":"sessionCrashed","payload":{"message":"There was an error while processing your request: module 'flet' has no attribute 'BackgroundImage'"}}
+2024-09-11 14:53:37,259 - DEBUG - sent to TCP: 154
+2024-09-11 14:53:39,551 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:53:39,551 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:53:39,551 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:53:39,552 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:53:39,596 - DEBUG - Flet View process 1112
+2024-09-11 14:53:39,597 - DEBUG - Closing connection...
+2024-09-11 14:53:39,597 - DEBUG - Disconnecting all pages...
+2024-09-11 14:53:39,597 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:53:39,597 - DEBUG - Shutting down thread pool...
+2024-09-11 14:54:29,753 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:54:29,754 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:54:29,755 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:54:29,755 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:54:29,755 - INFO - Starting up TCP server on localhost:51302
+2024-09-11 14:54:29,760 - INFO - Flet app has started...
+2024-09-11 14:54:29,760 - INFO - App URL: tcp://localhost:51302
+2024-09-11 14:54:29,760 - INFO - Starting Flet View app...
+2024-09-11 14:54:29,762 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:54:29,921 - DEBUG - Connected new TCP client
+2024-09-11 14:54:29,922 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:54:29,922 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:54:29,923 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:54:29,923 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:54:29,924 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:54:29,925 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:54:29,925 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:54:29,925 - INFO - App session started
+2024-09-11 14:54:29,926 - DEBUG - sent to TCP: 605
+2024-09-11 14:54:29,927 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:54:29,928 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:54:29,928 - DEBUG - sent to TCP: 56
+2024-09-11 14:54:29,931 - DEBUG - _process_command: error ["There was an error while processing your request: type object 'ImageFit' has no attribute 'cover'"] {}
+2024-09-11 14:54:29,932 - DEBUG - __send: {"action":"sessionCrashed","payload":{"message":"There was an error while processing your request: type object 'ImageFit' has no attribute 'cover'"}}
+2024-09-11 14:54:29,932 - DEBUG - sent to TCP: 153
+2024-09-11 14:54:31,563 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:54:31,563 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:54:31,564 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:54:31,564 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:54:31,668 - DEBUG - Flet View process 9776
+2024-09-11 14:54:31,669 - DEBUG - Closing connection...
+2024-09-11 14:54:31,669 - DEBUG - Disconnecting all pages...
+2024-09-11 14:54:31,669 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:54:31,669 - DEBUG - Shutting down thread pool...
+2024-09-11 14:54:51,192 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:54:51,194 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:54:51,194 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:54:51,194 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:54:51,194 - INFO - Starting up TCP server on localhost:51322
+2024-09-11 14:54:51,201 - INFO - Flet app has started...
+2024-09-11 14:54:51,201 - INFO - App URL: tcp://localhost:51322
+2024-09-11 14:54:51,201 - INFO - Starting Flet View app...
+2024-09-11 14:54:51,202 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:54:51,456 - DEBUG - Connected new TCP client
+2024-09-11 14:54:51,456 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:54:51,456 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:54:51,457 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:54:51,458 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:54:51,458 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:54:51,458 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:54:51,458 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:54:51,458 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:54:51,458 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:54:51,458 - INFO - App session started
+2024-09-11 14:54:51,459 - DEBUG - sent to TCP: 605
+2024-09-11 14:54:51,460 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:54:51,460 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:54:51,460 - DEBUG - sent to TCP: 56
+2024-09-11 14:54:51,463 - DEBUG - _process_command: error ["There was an error while processing your request: type object 'ImageFit' has no attribute 'cover'"] {}
+2024-09-11 14:54:51,463 - DEBUG - __send: {"action":"sessionCrashed","payload":{"message":"There was an error while processing your request: type object 'ImageFit' has no attribute 'cover'"}}
+2024-09-11 14:54:51,464 - DEBUG - sent to TCP: 153
+2024-09-11 14:54:55,325 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:54:55,325 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:55:46,656 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:55:46,657 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:55:46,657 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:55:46,657 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:55:46,657 - INFO - Starting up TCP server on localhost:51358
+2024-09-11 14:55:46,664 - INFO - Flet app has started...
+2024-09-11 14:55:46,664 - INFO - App URL: tcp://localhost:51358
+2024-09-11 14:55:46,664 - INFO - Starting Flet View app...
+2024-09-11 14:55:46,665 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:55:46,823 - DEBUG - Connected new TCP client
+2024-09-11 14:55:46,823 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:55:46,824 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:55:46,824 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:55:46,825 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:55:46,826 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:55:46,826 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:55:46,826 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:55:46,826 - INFO - App session started
+2024-09-11 14:55:46,826 - DEBUG - sent to TCP: 605
+2024-09-11 14:55:46,827 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:55:46,827 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:55:46,828 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:55:46,828 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:55:46,828 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"stack","i":"_2","p":"_1","c":["_3","_4"],"expand":"1"},{"t":"image","i":"_3","p":"_2","c":[],"expand":"1","src":"img/gradientecircular.png"},{"t":"container","i":"_4","p":"_2","c":["_5"],"alignment":"{\"x\":0,\"y\":0}"},{"t":"image","i":"_5","p":"_4","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_6","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:55:46,828 - DEBUG - sent to TCP: 56
+2024-09-11 14:55:46,829 - DEBUG - sent to TCP: 622
+2024-09-11 14:55:51,830 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:55:51,830 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:55:51,832 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 14:55:51,832 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:55:51,833 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:55:51,833 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_7"],"at":"0"},{"t":"container","i":"_7","p":"_1","c":["_8"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_8","p":"_7","c":["_9","_10","_11"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_9","p":"_8","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_10","p":"_8","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_11","p":"_8","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_6","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:55:51,835 - DEBUG - sent to TCP: 56
+2024-09-11 14:55:51,835 - DEBUG - sent to TCP: 782
+2024-09-11 14:55:52,209 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"46.0","windowleft":"371.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:55:52,209 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"46.0","windowleft":"371.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:55:52,210 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"moved"}}
+2024-09-11 14:55:52,210 - DEBUG - page.on_event_async: page window_event moved
+2024-09-11 14:55:53,861 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:55:53,861 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:55:53,863 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"46.0","windowleft":"371.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 14:55:53,863 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"46.0","windowleft":"371.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 14:55:53,863 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 14:55:53,863 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 14:56:21,878 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"resume"}}
+2024-09-11 14:56:21,878 - DEBUG - page.on_event_async: page app_lifecycle_state_change resume
+2024-09-11 14:56:21,880 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"46.0","windowleft":"371.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 14:56:21,880 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"46.0","windowleft":"371.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 14:56:21,880 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 14:56:21,880 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 14:56:22,723 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_11","eventName":"click","eventData":""}}
+2024-09-11 14:56:22,723 - DEBUG - page.on_event_async: _11 click 
+2024-09-11 14:56:22,723 - DEBUG - _process_command: set ['page'] {'windowclose': '1726077382.7233443'}
+2024-09-11 14:56:22,723 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1726077382.7233443"}]}}]}
+2024-09-11 14:56:22,724 - DEBUG - sent to TCP: 148
+2024-09-11 14:56:22,767 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:56:22,767 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:56:22,767 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:56:22,767 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:56:22,873 - DEBUG - Flet View process 7568
+2024-09-11 14:56:22,874 - DEBUG - Closing connection...
+2024-09-11 14:56:22,874 - DEBUG - Disconnecting all pages...
+2024-09-11 14:56:22,874 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:56:22,874 - DEBUG - Shutting down thread pool...
+2024-09-11 14:56:30,718 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:56:30,719 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:56:30,719 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:56:30,719 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:56:30,720 - INFO - Starting up TCP server on localhost:51389
+2024-09-11 14:56:30,725 - INFO - Flet app has started...
+2024-09-11 14:56:30,726 - INFO - App URL: tcp://localhost:51389
+2024-09-11 14:56:30,726 - INFO - Starting Flet View app...
+2024-09-11 14:56:30,726 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:56:30,884 - DEBUG - Connected new TCP client
+2024-09-11 14:56:30,885 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:56:30,885 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:56:30,886 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:56:30,887 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:56:30,887 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:56:30,887 - INFO - App session started
+2024-09-11 14:56:30,888 - DEBUG - sent to TCP: 605
+2024-09-11 14:56:30,890 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:56:30,890 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:56:30,891 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:56:30,891 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:56:30,891 - DEBUG - sent to TCP: 56
+2024-09-11 14:56:30,891 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"bgcolor":"transparent","expand":"1"},{"t":"stack","i":"_3","p":"_2","c":["_4","_5"],"n":"content"},{"t":"image","i":"_4","p":"_3","c":[],"expand":"1","src":"img/gradiente_circular.png"},{"t":"container","i":"_5","p":"_3","c":["_6"],"alignment":"{\"x\":0,\"y\":0}","padding":"20"},{"t":"image","i":"_6","p":"_5","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_7","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:56:30,892 - DEBUG - sent to TCP: 723
+2024-09-11 14:56:30,916 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"PathNotFoundException: Cannot retrieve length of file, path = 'C:\\Users\\Aluno\\Documents\\Vini 4 info\\EuSouTheGame\\assets\\img\\gradiente_circular.png' (OS Error: O sistema não pode encontrar o caminho especificado.\r\n, errno = 3)"}}
+2024-09-11 14:56:30,916 - DEBUG - page.on_event_async: page error PathNotFoundException: Cannot retrieve length of file, path = 'C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets\img\gradiente_circular.png' (OS Error: O sistema não pode encontrar o caminho especificado.
+, errno = 3)
+2024-09-11 14:56:35,893 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:56:35,893 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:56:35,895 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 14:56:35,895 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:56:35,895 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:56:35,896 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_8"],"at":"0"},{"t":"container","i":"_8","p":"_1","c":["_9"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_9","p":"_8","c":["_10","_11","_12"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_10","p":"_9","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_11","p":"_9","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_12","p":"_9","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_7","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:56:35,897 - DEBUG - sent to TCP: 56
+2024-09-11 14:56:35,898 - DEBUG - sent to TCP: 784
+2024-09-11 14:56:37,004 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_12","eventName":"click","eventData":""}}
+2024-09-11 14:56:37,005 - DEBUG - page.on_event_async: _12 click 
+2024-09-11 14:56:37,005 - DEBUG - _process_command: set ['page'] {'windowclose': '1726077397.0053172'}
+2024-09-11 14:56:37,006 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1726077397.0053172"}]}}]}
+2024-09-11 14:56:37,006 - DEBUG - sent to TCP: 148
+2024-09-11 14:56:37,035 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:56:37,035 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:56:37,036 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:56:37,036 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:56:37,140 - DEBUG - Flet View process 10140
+2024-09-11 14:56:37,141 - DEBUG - Closing connection...
+2024-09-11 14:56:37,141 - DEBUG - Disconnecting all pages...
+2024-09-11 14:56:37,141 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:56:37,141 - DEBUG - Shutting down thread pool...
+2024-09-11 14:57:05,287 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:57:05,288 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:57:05,288 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:57:05,288 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:57:05,288 - INFO - Starting up TCP server on localhost:51420
+2024-09-11 14:57:05,295 - INFO - Flet app has started...
+2024-09-11 14:57:05,295 - INFO - App URL: tcp://localhost:51420
+2024-09-11 14:57:05,295 - INFO - Starting Flet View app...
+2024-09-11 14:57:05,296 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:57:05,459 - DEBUG - Connected new TCP client
+2024-09-11 14:57:05,459 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:57:05,459 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:57:05,460 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:57:05,460 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:57:05,460 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:57:05,460 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:57:05,460 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:57:05,460 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:57:05,460 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:57:05,461 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:57:05,461 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:57:05,461 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:57:05,461 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:57:05,461 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:57:05,461 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:57:05,461 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:57:05,461 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:57:05,461 - INFO - App session started
+2024-09-11 14:57:05,462 - DEBUG - sent to TCP: 605
+2024-09-11 14:57:05,463 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:57:05,464 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:57:05,464 - DEBUG - sent to TCP: 56
+2024-09-11 14:57:05,466 - DEBUG - _process_command: error ["There was an error while processing your request: type object 'ImageFit' has no attribute 'cover'"] {}
+2024-09-11 14:57:05,466 - DEBUG - __send: {"action":"sessionCrashed","payload":{"message":"There was an error while processing your request: type object 'ImageFit' has no attribute 'cover'"}}
+2024-09-11 14:57:05,467 - DEBUG - sent to TCP: 153
+2024-09-11 14:57:06,979 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:57:06,979 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:57:06,980 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:57:06,980 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:57:07,082 - DEBUG - Flet View process 2688
+2024-09-11 14:57:07,082 - DEBUG - Closing connection...
+2024-09-11 14:57:07,082 - DEBUG - Disconnecting all pages...
+2024-09-11 14:57:07,083 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:57:07,083 - DEBUG - Shutting down thread pool...
+2024-09-11 14:57:44,916 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:57:44,918 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:57:44,918 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:57:44,918 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:57:44,918 - INFO - Starting up TCP server on localhost:51448
+2024-09-11 14:57:44,924 - INFO - Flet app has started...
+2024-09-11 14:57:44,924 - INFO - App URL: tcp://localhost:51448
+2024-09-11 14:57:44,924 - INFO - Starting Flet View app...
+2024-09-11 14:57:44,925 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:57:45,087 - DEBUG - Connected new TCP client
+2024-09-11 14:57:45,087 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:57:45,088 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:57:45,088 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:57:45,089 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:57:45,090 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:57:45,090 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:57:45,090 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:57:45,090 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:57:45,090 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:57:45,090 - INFO - App session started
+2024-09-11 14:57:45,091 - DEBUG - sent to TCP: 605
+2024-09-11 14:57:45,091 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:57:45,091 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:57:45,092 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:57:45,093 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:57:45,093 - DEBUG - sent to TCP: 56
+2024-09-11 14:57:45,093 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"expand":"1"},{"t":"stack","i":"_3","p":"_2","c":["_4","_6"],"expand":"1","n":"content"},{"t":"container","i":"_4","p":"_3","c":["_5"],"expand":"1"},{"t":"image","i":"_5","p":"_4","c":[],"n":"content","src":"img/gradiente_circular.png"},{"t":"container","i":"_6","p":"_3","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","padding":"20"},{"t":"image","i":"_7","p":"_6","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_8","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:57:45,094 - DEBUG - sent to TCP: 773
+2024-09-11 14:57:45,118 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"PathNotFoundException: Cannot retrieve length of file, path = 'C:\\Users\\Aluno\\Documents\\Vini 4 info\\EuSouTheGame\\assets\\img\\gradiente_circular.png' (OS Error: O sistema não pode encontrar o caminho especificado.\r\n, errno = 3)"}}
+2024-09-11 14:57:45,118 - DEBUG - page.on_event_async: page error PathNotFoundException: Cannot retrieve length of file, path = 'C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets\img\gradiente_circular.png' (OS Error: O sistema não pode encontrar o caminho especificado.
+, errno = 3)
+2024-09-11 14:57:50,096 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:57:50,096 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:57:50,096 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 14:57:50,096 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:57:50,097 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:57:50,097 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_9"],"at":"0"},{"t":"container","i":"_9","p":"_1","c":["_10"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_10","p":"_9","c":["_11","_12","_13"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_11","p":"_10","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_12","p":"_10","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_13","p":"_10","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_8","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:57:50,097 - DEBUG - sent to TCP: 56
+2024-09-11 14:57:50,097 - DEBUG - sent to TCP: 789
+2024-09-11 14:57:51,643 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_13","eventName":"click","eventData":""}}
+2024-09-11 14:57:51,643 - DEBUG - page.on_event_async: _13 click 
+2024-09-11 14:57:51,645 - DEBUG - _process_command: set ['page'] {'windowclose': '1726077471.6446009'}
+2024-09-11 14:57:51,645 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1726077471.6446009"}]}}]}
+2024-09-11 14:57:51,645 - DEBUG - sent to TCP: 148
+2024-09-11 14:57:51,706 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:57:51,706 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:57:51,800 - DEBUG - Flet View process 14512
+2024-09-11 14:57:51,800 - DEBUG - Closing connection...
+2024-09-11 14:57:51,800 - DEBUG - Disconnecting all pages...
+2024-09-11 14:57:51,800 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:57:51,800 - DEBUG - Shutting down thread pool...
+2024-09-11 14:59:54,603 - DEBUG - Using proactor: IocpProactor
+2024-09-11 14:59:54,604 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 14:59:54,604 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:59:54,605 - DEBUG - Creating new PubSubHub instance
+2024-09-11 14:59:54,605 - INFO - Starting up TCP server on localhost:51529
+2024-09-11 14:59:54,610 - INFO - Flet app has started...
+2024-09-11 14:59:54,610 - INFO - App URL: tcp://localhost:51529
+2024-09-11 14:59:54,610 - INFO - Starting Flet View app...
+2024-09-11 14:59:54,611 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 14:59:54,777 - DEBUG - Connected new TCP client
+2024-09-11 14:59:54,777 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 14:59:54,777 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 14:59:54,778 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 14:59:54,778 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 14:59:54,778 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 14:59:54,778 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 14:59:54,779 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 14:59:54,779 - INFO - App session started
+2024-09-11 14:59:54,780 - DEBUG - sent to TCP: 605
+2024-09-11 14:59:54,781 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:59:54,781 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 14:59:54,782 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 14:59:54,782 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 14:59:54,782 - DEBUG - sent to TCP: 56
+2024-09-11 14:59:54,782 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"expand":"1"},{"t":"stack","i":"_3","p":"_2","c":["_4","_6"],"expand":"1","n":"content"},{"t":"container","i":"_4","p":"_3","c":["_5"],"expand":"1"},{"t":"image","i":"_5","p":"_4","c":[],"n":"content","src":"img/gradiente_circular.png"},{"t":"container","i":"_6","p":"_3","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","padding":"20"},{"t":"image","i":"_7","p":"_6","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_8","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 14:59:54,783 - DEBUG - sent to TCP: 773
+2024-09-11 14:59:54,817 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"PathNotFoundException: Cannot retrieve length of file, path = 'C:\\Users\\Aluno\\Documents\\Vini 4 info\\EuSouTheGame\\assets\\img\\gradiente_circular.png' (OS Error: O sistema não pode encontrar o caminho especificado.\r\n, errno = 3)"}}
+2024-09-11 14:59:54,817 - DEBUG - page.on_event_async: page error PathNotFoundException: Cannot retrieve length of file, path = 'C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets\img\gradiente_circular.png' (OS Error: O sistema não pode encontrar o caminho especificado.
+, errno = 3)
+2024-09-11 14:59:58,672 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 14:59:58,672 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 14:59:58,673 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 14:59:58,673 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 14:59:58,720 - DEBUG - Flet View process 13376
+2024-09-11 14:59:58,720 - DEBUG - Closing connection...
+2024-09-11 14:59:58,720 - DEBUG - Disconnecting all pages...
+2024-09-11 14:59:58,720 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 14:59:58,721 - DEBUG - Shutting down thread pool...
+2024-09-11 14:59:59,785 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 14:59:59,785 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:00:13,249 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:00:13,251 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:00:13,251 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:00:13,251 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:00:13,251 - INFO - Starting up TCP server on localhost:51545
+2024-09-11 15:00:13,256 - INFO - Flet app has started...
+2024-09-11 15:00:13,256 - INFO - App URL: tcp://localhost:51545
+2024-09-11 15:00:13,256 - INFO - Starting Flet View app...
+2024-09-11 15:00:13,257 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:00:13,415 - DEBUG - Connected new TCP client
+2024-09-11 15:00:13,415 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:00:13,416 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:00:13,416 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:00:13,417 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:00:13,417 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:00:13,417 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:00:13,417 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:00:13,417 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:00:13,417 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:00:13,417 - INFO - App session started
+2024-09-11 15:00:13,418 - DEBUG - sent to TCP: 605
+2024-09-11 15:00:13,419 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:00:13,419 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:00:13,420 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:00:13,420 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:00:13,420 - DEBUG - sent to TCP: 56
+2024-09-11 15:00:13,420 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"stack","i":"_2","p":"_1","c":["_3","_4"],"expand":"1"},{"t":"image","i":"_3","p":"_2","c":[],"expand":"1","src":"img/gradientecircular.png"},{"t":"container","i":"_4","p":"_2","c":["_5"],"alignment":"{\"x\":0,\"y\":0}"},{"t":"image","i":"_5","p":"_4","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_6","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:00:13,421 - DEBUG - sent to TCP: 622
+2024-09-11 15:00:14,552 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:00:14,552 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:00:14,553 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 15:00:14,553 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 15:00:14,656 - DEBUG - Flet View process 14044
+2024-09-11 15:00:14,656 - DEBUG - Closing connection...
+2024-09-11 15:00:14,656 - DEBUG - Disconnecting all pages...
+2024-09-11 15:00:14,656 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 15:00:14,657 - DEBUG - Shutting down thread pool...
+2024-09-11 15:00:18,422 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:00:18,422 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:00:24,590 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:00:24,592 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:00:24,592 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:00:24,592 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:00:24,593 - INFO - Starting up TCP server on localhost:51556
+2024-09-11 15:00:24,598 - INFO - Flet app has started...
+2024-09-11 15:00:24,599 - INFO - App URL: tcp://localhost:51556
+2024-09-11 15:00:24,599 - INFO - Starting Flet View app...
+2024-09-11 15:00:24,600 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:00:24,866 - DEBUG - Connected new TCP client
+2024-09-11 15:00:24,867 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:00:24,867 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:00:24,868 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:00:24,868 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:00:24,868 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:00:24,868 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:00:24,868 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:00:24,868 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:00:24,869 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:00:24,869 - INFO - App session started
+2024-09-11 15:00:24,872 - DEBUG - sent to TCP: 605
+2024-09-11 15:00:24,876 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:00:24,876 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:00:24,878 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:00:24,878 - DEBUG - sent to TCP: 56
+2024-09-11 15:00:24,878 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:00:24,879 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"stack","i":"_2","p":"_1","c":["_3","_4"],"expand":"1"},{"t":"image","i":"_3","p":"_2","c":[],"expand":"1","src":"img/gradiente_circular.png"},{"t":"container","i":"_4","p":"_2","c":["_5"],"alignment":"{\"x\":0,\"y\":0}"},{"t":"image","i":"_5","p":"_4","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_6","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:00:24,880 - DEBUG - sent to TCP: 623
+2024-09-11 15:00:24,900 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"PathNotFoundException: Cannot retrieve length of file, path = 'C:\\Users\\Aluno\\Documents\\Vini 4 info\\EuSouTheGame\\assets\\img\\gradiente_circular.png' (OS Error: O sistema não pode encontrar o caminho especificado.\r\n, errno = 3)"}}
+2024-09-11 15:00:24,900 - DEBUG - page.on_event_async: page error PathNotFoundException: Cannot retrieve length of file, path = 'C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets\img\gradiente_circular.png' (OS Error: O sistema não pode encontrar o caminho especificado.
+, errno = 3)
+2024-09-11 15:00:26,062 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:00:26,062 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:00:26,063 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 15:00:26,063 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 15:00:26,164 - DEBUG - Flet View process 8556
+2024-09-11 15:00:26,165 - DEBUG - Closing connection...
+2024-09-11 15:00:26,165 - DEBUG - Disconnecting all pages...
+2024-09-11 15:00:26,165 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 15:00:26,165 - DEBUG - Shutting down thread pool...
+2024-09-11 15:00:29,881 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:00:29,881 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:00:32,677 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:00:32,678 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:00:32,678 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:00:32,679 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:00:32,679 - INFO - Starting up TCP server on localhost:51565
+2024-09-11 15:00:32,684 - INFO - Flet app has started...
+2024-09-11 15:00:32,684 - INFO - App URL: tcp://localhost:51565
+2024-09-11 15:00:32,684 - INFO - Starting Flet View app...
+2024-09-11 15:00:32,685 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:00:32,848 - DEBUG - Connected new TCP client
+2024-09-11 15:00:32,849 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:00:32,849 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:00:32,850 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:00:32,850 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:00:32,850 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:00:32,850 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:00:32,850 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:00:32,850 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:00:32,850 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:00:32,851 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:00:32,851 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:00:32,851 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:00:32,851 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:00:32,851 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:00:32,851 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:00:32,851 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:00:32,851 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:00:32,851 - INFO - App session started
+2024-09-11 15:00:32,852 - DEBUG - sent to TCP: 605
+2024-09-11 15:00:32,853 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:00:32,853 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:00:32,853 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:00:32,854 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:00:32,854 - DEBUG - sent to TCP: 56
+2024-09-11 15:00:32,854 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#6a0dad","expand":"1"},{"t":"column","i":"_3","p":"_2","c":["_4"],"alignment":"center","n":"content","spacing":"20"},{"t":"image","i":"_4","p":"_3","c":[],"height":"200","src":"img\\logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:00:32,855 - DEBUG - sent to TCP: 589
+2024-09-11 15:00:34,488 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:00:34,488 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:00:34,489 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 15:00:34,489 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 15:00:34,591 - DEBUG - Flet View process 14288
+2024-09-11 15:00:34,591 - DEBUG - Closing connection...
+2024-09-11 15:00:34,591 - DEBUG - Disconnecting all pages...
+2024-09-11 15:00:34,592 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 15:00:34,592 - DEBUG - Shutting down thread pool...
+2024-09-11 15:00:37,855 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:00:37,855 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:04:57,281 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:04:57,282 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:04:57,282 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:04:57,282 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:04:57,284 - INFO - Starting up TCP server on localhost:51828
+2024-09-11 15:04:57,289 - INFO - Flet app has started...
+2024-09-11 15:04:57,289 - INFO - App URL: tcp://localhost:51828
+2024-09-11 15:04:57,289 - INFO - Starting Flet View app...
+2024-09-11 15:04:57,290 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:04:57,464 - DEBUG - Connected new TCP client
+2024-09-11 15:04:57,465 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:04:57,465 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:04:57,466 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:04:57,466 - INFO - App session started
+2024-09-11 15:04:57,468 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:04:57,468 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:04:57,468 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"expand":"1"},{"t":"stack","i":"_3","p":"_2","c":["_4","_5"],"expand":"1","n":"content"},{"t":"container","i":"_4","p":"_3","c":[],"expand":"1","gradient":"{\"colors\":[\"0xFFb2f3f6\",\"0xFF78d1cd\"],\"tile_mode\":\"clamp\",\"stops\":[0.0,1.0],\"center\":{\"x\":0.0,\"y\":0.0},\"radius\":1.0,\"focal_radius\":0.0,\"type\":\"radial\"}"},{"t":"container","i":"_5","p":"_3","c":["_6"],"alignment":"{\"x\":0,\"y\":0}"},{"t":"image","i":"_6","p":"_5","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_7","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:04:57,470 - DEBUG - sent to TCP: 605
+2024-09-11 15:04:57,470 - DEBUG - sent to TCP: 857
+2024-09-11 15:05:00,344 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:05:00,344 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:05:00,345 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 15:05:00,346 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 15:05:00,450 - DEBUG - Flet View process 376
+2024-09-11 15:05:00,451 - DEBUG - Closing connection...
+2024-09-11 15:05:00,451 - DEBUG - Disconnecting all pages...
+2024-09-11 15:05:00,451 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 15:05:00,451 - DEBUG - Shutting down thread pool...
+2024-09-11 15:06:00,595 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:06:00,596 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:06:00,596 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:06:00,596 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:06:00,597 - INFO - Starting up TCP server on localhost:51870
+2024-09-11 15:06:00,602 - INFO - Flet app has started...
+2024-09-11 15:06:00,602 - INFO - App URL: tcp://localhost:51870
+2024-09-11 15:06:00,602 - INFO - Starting Flet View app...
+2024-09-11 15:06:00,603 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:06:00,766 - DEBUG - Connected new TCP client
+2024-09-11 15:06:00,766 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:06:00,766 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:06:00,767 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:06:00,767 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:06:00,767 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:06:00,767 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:06:00,767 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:06:00,767 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:06:00,768 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:06:00,768 - INFO - App session started
+2024-09-11 15:06:00,769 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:06:00,770 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:06:00,770 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"expand":"1"},{"t":"stack","i":"_3","p":"_2","c":["_4","_5"],"expand":"1","n":"content"},{"t":"container","i":"_4","p":"_3","c":[],"expand":"1","gradient":"{\"colors\":[\"#b2f3f6\",\"#9c96e1\",\"#78d1cd\"],\"tile_mode\":\"clamp\",\"stops\":[0.0,1.0],\"center\":{\"x\":0.0,\"y\":0.0},\"radius\":1.0,\"focal_radius\":0.0,\"type\":\"radial\"}"},{"t":"container","i":"_5","p":"_3","c":["_6"],"alignment":"{\"x\":0,\"y\":0}"},{"t":"image","i":"_6","p":"_5","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_7","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:06:00,770 - DEBUG - sent to TCP: 605
+2024-09-11 15:06:00,771 - DEBUG - sent to TCP: 863
+2024-09-11 15:06:00,797 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:00,798 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:00,811 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:00,811 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:00,844 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:00,844 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:00,898 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:00,898 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:00,928 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:00,929 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:00,961 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:00,961 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,011 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,011 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,044 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,044 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,078 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,078 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,128 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,128 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,161 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,161 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,195 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,195 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,246 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,247 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,279 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,280 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,312 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,312 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,362 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,362 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,394 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,395 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,428 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,429 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,479 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,479 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,512 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,512 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,545 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,546 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,594 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,595 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,629 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,629 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,662 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,662 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,710 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,710 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,745 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,745 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,777 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,777 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,828 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,828 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,862 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,862 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,895 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,895 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,945 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,945 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:01,978 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:01,978 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:02,012 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:02,012 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:02,062 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:02,062 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:02,095 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:02,095 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:02,129 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:02,129 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:02,177 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:02,177 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:02,212 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:02,213 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:02,245 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"error","eventData":"Invalid argument(s): \"colors\" and \"colorStops\" arguments must have equal length."}}
+2024-09-11 15:06:02,245 - DEBUG - page.on_event_async: page error Invalid argument(s): "colors" and "colorStops" arguments must have equal length.
+2024-09-11 15:06:02,285 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:06:02,286 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:06:02,286 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 15:06:02,286 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 15:06:02,394 - DEBUG - Flet View process 13692
+2024-09-11 15:06:02,394 - DEBUG - Closing connection...
+2024-09-11 15:06:02,394 - DEBUG - Disconnecting all pages...
+2024-09-11 15:06:02,394 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 15:06:02,395 - DEBUG - Shutting down thread pool...
+2024-09-11 15:06:12,311 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:06:12,312 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:06:12,313 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:06:12,313 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:06:12,313 - INFO - Starting up TCP server on localhost:51880
+2024-09-11 15:06:12,318 - INFO - Flet app has started...
+2024-09-11 15:06:12,318 - INFO - App URL: tcp://localhost:51880
+2024-09-11 15:06:12,318 - INFO - Starting Flet View app...
+2024-09-11 15:06:12,319 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:06:12,479 - DEBUG - Connected new TCP client
+2024-09-11 15:06:12,480 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:06:12,480 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:06:12,481 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:06:12,482 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:06:12,482 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:06:12,482 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:06:12,482 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:06:12,482 - INFO - App session started
+2024-09-11 15:06:12,483 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:06:12,483 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:06:12,483 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"expand":"1"},{"t":"stack","i":"_3","p":"_2","c":["_4","_5"],"expand":"1","n":"content"},{"t":"container","i":"_4","p":"_3","c":[],"expand":"1","gradient":"{\"colors\":[\"#b2f3f6\",\"#9c96e1\"],\"tile_mode\":\"clamp\",\"stops\":[0.0,1.0],\"center\":{\"x\":0.0,\"y\":0.0},\"radius\":1.0,\"focal_radius\":0.0,\"type\":\"radial\"}"},{"t":"container","i":"_5","p":"_3","c":["_6"],"alignment":"{\"x\":0,\"y\":0}"},{"t":"image","i":"_6","p":"_5","c":[],"height":"200","n":"content","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_7","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:06:12,484 - DEBUG - sent to TCP: 605
+2024-09-11 15:06:12,485 - DEBUG - sent to TCP: 851
+2024-09-11 15:06:14,084 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:14,084 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:14,084 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"maximize"}}
+2024-09-11 15:06:14,084 - DEBUG - page.on_event_async: page window_event maximize
+2024-09-11 15:06:14,332 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"1920.0","height":"1017.0","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:14,333 - DEBUG - page.on_event_async: page change [{"i":"page","width":"1920.0","height":"1017.0","windowwidth":"1936.0","windowheight":"1056.0","windowtop":"-8.0","windowleft":"-8.0","windowminimized":"false","windowmaximized":"true","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:14,333 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":1920.0,\"height\":1017.0}"}}
+2024-09-11 15:06:14,334 - DEBUG - page.on_event_async: page resized {"width":1920.0,"height":1017.0}
+2024-09-11 15:06:26,035 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:26,035 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:26,036 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"unmaximize"}}
+2024-09-11 15:06:26,036 - DEBUG - page.on_event_async: page window_event unmaximize
+2024-09-11 15:06:26,283 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:26,283 - DEBUG - page.on_event_async: page change [{"i":"page","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:26,283 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":1264.0,\"height\":681.0}"}}
+2024-09-11 15:06:26,283 - DEBUG - page.on_event_async: page resized {"width":1264.0,"height":681.0}
+2024-09-11 15:06:28,285 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:28,286 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:28,286 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"resized"}}
+2024-09-11 15:06:28,286 - DEBUG - page.on_event_async: page window_event resized
+2024-09-11 15:06:28,483 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"576.0","height":"681.0","windowwidth":"592.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:28,483 - DEBUG - page.on_event_async: page change [{"i":"page","width":"576.0","height":"681.0","windowwidth":"592.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:28,483 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":576.0,\"height\":681.0}"}}
+2024-09-11 15:06:28,483 - DEBUG - page.on_event_async: page resized {"width":576.0,"height":681.0}
+2024-09-11 15:06:30,153 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:30,153 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:30,153 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"resized"}}
+2024-09-11 15:06:30,153 - DEBUG - page.on_event_async: page window_event resized
+2024-09-11 15:06:30,399 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"576.0","height":"910.0","windowwidth":"592.0","windowheight":"949.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:30,399 - DEBUG - page.on_event_async: page change [{"i":"page","width":"576.0","height":"910.0","windowwidth":"592.0","windowheight":"949.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:30,399 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":576.0,\"height\":910.0}"}}
+2024-09-11 15:06:30,399 - DEBUG - page.on_event_async: page resized {"width":576.0,"height":910.0}
+2024-09-11 15:06:32,525 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"40.0","windowleft":"694.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:32,525 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"40.0","windowleft":"694.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:32,525 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"moved"}}
+2024-09-11 15:06:32,526 - DEBUG - page.on_event_async: page window_event moved
+2024-09-11 15:06:38,758 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:06:38,758 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:06:38,758 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"moved"}}
+2024-09-11 15:06:38,758 - DEBUG - page.on_event_async: page window_event moved
+2024-09-11 15:06:46,362 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:06:46,362 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:06:46,364 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 15:06:46,365 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 15:06:46,368 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 15:06:46,368 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 15:07:38,510 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"resume"}}
+2024-09-11 15:07:38,510 - DEBUG - page.on_event_async: page app_lifecycle_state_change resume
+2024-09-11 15:07:38,511 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:07:38,511 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:07:38,512 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 15:07:38,512 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 15:07:39,317 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:07:39,317 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:07:39,318 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 15:07:39,318 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 15:07:39,318 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 15:07:39,318 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 15:07:39,440 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"160.0","windowheight":"28.0","windowtop":"-32000.0","windowleft":"-32000.0","windowminimized":"true","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 15:07:39,440 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"160.0","windowheight":"28.0","windowtop":"-32000.0","windowleft":"-32000.0","windowminimized":"true","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 15:07:39,440 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 15:07:39,441 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"160.0","windowheight":"28.0","windowtop":"-32000.0","windowleft":"-32000.0","windowminimized":"true","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 15:07:39,441 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"minimize"}}
+2024-09-11 15:07:39,441 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 15:07:39,441 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"160.0","windowheight":"28.0","windowtop":"-32000.0","windowleft":"-32000.0","windowminimized":"true","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 15:07:39,441 - DEBUG - page.on_event_async: page window_event minimize
+2024-09-11 15:07:43,977 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"resume"}}
+2024-09-11 15:07:43,977 - DEBUG - page.on_event_async: page app_lifecycle_state_change resume
+2024-09-11 15:07:43,977 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:07:43,978 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:07:43,978 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 15:07:43,978 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:07:43,978 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 15:07:43,978 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:07:43,978 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"restore"}}
+2024-09-11 15:07:43,978 - DEBUG - page.on_event_async: page window_event restore
+2024-09-11 15:07:44,591 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:07:44,591 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:07:44,592 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 15:07:44,592 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 15:07:44,592 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 15:07:44,592 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 15:07:49,081 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"resume"}}
+2024-09-11 15:07:49,081 - DEBUG - page.on_event_async: page app_lifecycle_state_change resume
+2024-09-11 15:07:49,082 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:07:49,083 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:07:49,083 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-09-11 15:07:49,083 - DEBUG - page.on_event_async: page window_event focus
+2024-09-11 15:07:50,106 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:07:50,106 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:07:50,108 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-09-11 15:07:50,109 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"592.0","windowheight":"949.0","windowtop":"59.0","windowleft":"999.0","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-09-11 15:07:50,109 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-09-11 15:07:50,109 - DEBUG - page.on_event_async: page window_event blur
+2024-09-11 15:10:17,134 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:10:17,135 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:10:17,135 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:10:17,135 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:10:17,136 - INFO - Starting up TCP server on localhost:52037
+2024-09-11 15:10:17,141 - INFO - Flet app has started...
+2024-09-11 15:10:17,141 - INFO - App URL: tcp://localhost:52037
+2024-09-11 15:10:17,141 - INFO - Starting Flet View app...
+2024-09-11 15:10:17,142 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:10:17,310 - DEBUG - Connected new TCP client
+2024-09-11 15:10:17,311 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:10:17,311 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:10:17,312 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:10:17,312 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:10:17,312 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:10:17,312 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:10:17,312 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:10:17,313 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:10:17,313 - INFO - App session started
+2024-09-11 15:10:17,314 - DEBUG - sent to TCP: 605
+2024-09-11 15:10:17,315 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:10:17,315 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:10:17,317 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:10:17,317 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:10:17,318 - DEBUG - sent to TCP: 56
+2024-09-11 15:10:17,318 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"alignment":"{\"x\":0,\"y\":0}","expand":"1","gradient":"{\"colors\":[\"0xFFb2f3f6\",\"0xFF78d1cd\"],\"tile_mode\":\"clamp\",\"stops\":[0.0,1.0],\"center\":{\"x\":0.0,\"y\":0.0},\"radius\":1.0,\"focal_radius\":0.0,\"type\":\"radial\"}"},{"t":"column","i":"_3","p":"_2","c":["_4"],"alignment":"center","n":"content","spacing":"20"},{"t":"image","i":"_4","p":"_3","c":[],"height":"200","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:10:17,319 - DEBUG - sent to TCP: 759
+2024-09-11 15:10:22,320 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:10:22,320 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:10:22,323 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 15:10:22,323 - DEBUG - sent to TCP: 56
+2024-09-11 15:10:22,324 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:10:22,324 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:10:22,325 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_6"],"at":"0"},{"t":"container","i":"_6","p":"_1","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_7","p":"_6","c":["_8","_9","_10"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_8","p":"_7","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_9","p":"_7","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_10","p":"_7","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:10:22,326 - DEBUG - sent to TCP: 780
+2024-09-11 15:10:23,626 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_10","eventName":"click","eventData":""}}
+2024-09-11 15:10:23,626 - DEBUG - page.on_event_async: _10 click 
+2024-09-11 15:10:23,627 - DEBUG - _process_command: set ['page'] {'windowclose': '1726078223.6261432'}
+2024-09-11 15:10:23,627 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1726078223.6261432"}]}}]}
+2024-09-11 15:10:23,627 - DEBUG - sent to TCP: 148
+2024-09-11 15:10:23,663 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:10:23,663 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:10:23,664 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 15:10:23,664 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 15:10:23,776 - DEBUG - Flet View process 7568
+2024-09-11 15:10:23,776 - DEBUG - Closing connection...
+2024-09-11 15:10:23,777 - DEBUG - Disconnecting all pages...
+2024-09-11 15:10:23,777 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 15:10:23,777 - DEBUG - Shutting down thread pool...
+2024-09-11 15:10:59,929 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:10:59,930 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:10:59,930 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:10:59,930 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:10:59,930 - INFO - Starting up TCP server on localhost:52077
+2024-09-11 15:10:59,935 - INFO - Flet app has started...
+2024-09-11 15:10:59,936 - INFO - App URL: tcp://localhost:52077
+2024-09-11 15:10:59,936 - INFO - Starting Flet View app...
+2024-09-11 15:10:59,937 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:11:00,094 - DEBUG - Connected new TCP client
+2024-09-11 15:11:00,094 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:11:00,095 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:11:00,095 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:11:00,095 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:11:00,096 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:11:00,096 - INFO - App session started
+2024-09-11 15:11:00,097 - DEBUG - sent to TCP: 605
+2024-09-11 15:11:00,098 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:11:00,098 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:11:00,099 - DEBUG - sent to TCP: 56
+2024-09-11 15:11:00,100 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:11:00,100 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:11:00,100 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"alignment":"{\"x\":0,\"y\":0}","expand":"1","gradient":"{\"colors\":[\"#b2f3f6\",\"#9c96e1\"],\"tile_mode\":\"clamp\",\"stops\":[0.0,1.0],\"center\":{\"x\":0.0,\"y\":0.0},\"radius\":1.0,\"focal_radius\":0.0,\"type\":\"radial\"}"},{"t":"column","i":"_3","p":"_2","c":["_4"],"alignment":"center","n":"content","spacing":"20"},{"t":"image","i":"_4","p":"_3","c":[],"height":"200","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:11:00,102 - DEBUG - sent to TCP: 753
+2024-09-11 15:11:03,581 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"498.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:03,581 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"498.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:03,581 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"resized"}}
+2024-09-11 15:11:03,582 - DEBUG - page.on_event_async: page window_event resized
+2024-09-11 15:11:03,741 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"482.0","height":"681.0","windowwidth":"498.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:03,742 - DEBUG - page.on_event_async: page change [{"i":"page","width":"482.0","height":"681.0","windowwidth":"498.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:03,742 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":482.0,\"height\":681.0}"}}
+2024-09-11 15:11:03,742 - DEBUG - page.on_event_async: page resized {"width":482.0,"height":681.0}
+2024-09-11 15:11:05,103 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:11:05,103 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:11:05,103 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 15:11:05,103 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:11:05,104 - DEBUG - sent to TCP: 56
+2024-09-11 15:11:05,104 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:11:05,104 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_6"],"at":"0"},{"t":"container","i":"_6","p":"_1","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_7","p":"_6","c":["_8","_9","_10"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_8","p":"_7","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_9","p":"_7","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_10","p":"_7","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:11:05,104 - DEBUG - sent to TCP: 780
+2024-09-11 15:11:05,254 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"498.0","windowheight":"720.0","windowtop":"51.0","windowleft":"620.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:05,254 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"498.0","windowheight":"720.0","windowtop":"51.0","windowleft":"620.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:05,256 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"moved"}}
+2024-09-11 15:11:05,256 - DEBUG - page.on_event_async: page window_event moved
+2024-09-11 15:11:06,855 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"498.0","windowheight":"886.0","windowtop":"51.0","windowleft":"620.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:06,855 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"498.0","windowheight":"886.0","windowtop":"51.0","windowleft":"620.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:06,855 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"resized"}}
+2024-09-11 15:11:06,855 - DEBUG - page.on_event_async: page window_event resized
+2024-09-11 15:11:07,010 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"482.0","height":"847.0","windowwidth":"498.0","windowheight":"886.0","windowtop":"51.0","windowleft":"620.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:07,010 - DEBUG - page.on_event_async: page change [{"i":"page","width":"482.0","height":"847.0","windowwidth":"498.0","windowheight":"886.0","windowtop":"51.0","windowleft":"620.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:07,011 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":482.0,\"height\":847.0}"}}
+2024-09-11 15:11:07,011 - DEBUG - page.on_event_async: page resized {"width":482.0,"height":847.0}
+2024-09-11 15:11:07,620 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_10","eventName":"click","eventData":""}}
+2024-09-11 15:11:07,620 - DEBUG - page.on_event_async: _10 click 
+2024-09-11 15:11:07,621 - DEBUG - _process_command: set ['page'] {'windowclose': '1726078267.6202235'}
+2024-09-11 15:11:07,621 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1726078267.6202235"}]}}]}
+2024-09-11 15:11:07,621 - DEBUG - sent to TCP: 148
+2024-09-11 15:11:07,667 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:11:07,668 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:11:07,668 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 15:11:07,668 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 15:11:07,777 - DEBUG - Flet View process 3676
+2024-09-11 15:11:07,777 - DEBUG - Closing connection...
+2024-09-11 15:11:07,777 - DEBUG - Disconnecting all pages...
+2024-09-11 15:11:07,777 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 15:11:07,777 - DEBUG - Shutting down thread pool...
+2024-09-11 15:11:09,444 - DEBUG - Using proactor: IocpProactor
+2024-09-11 15:11:09,445 - INFO - Assets path configured: C:\Users\Aluno\Documents\Vini 4 info\EuSouTheGame\assets
+2024-09-11 15:11:09,446 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:11:09,446 - DEBUG - Creating new PubSubHub instance
+2024-09-11 15:11:09,446 - INFO - Starting up TCP server on localhost:52087
+2024-09-11 15:11:09,450 - INFO - Flet app has started...
+2024-09-11 15:11:09,450 - INFO - App URL: tcp://localhost:52087
+2024-09-11 15:11:09,450 - INFO - Starting Flet View app...
+2024-09-11 15:11:09,452 - INFO - Flet View found in: C:\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-09-11 15:11:09,612 - DEBUG - Connected new TCP client
+2024-09-11 15:11:09,612 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-09-11 15:11:09,613 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"light","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-09-11 15:11:09,613 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-09-11 15:11:09,613 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-09-11 15:11:09,613 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-09-11 15:11:09,613 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-09-11 15:11:09,613 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-09-11 15:11:09,613 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-09-11 15:11:09,614 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-09-11 15:11:09,614 - INFO - App session started
+2024-09-11 15:11:09,615 - DEBUG - sent to TCP: 605
+2024-09-11 15:11:09,616 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:11:09,616 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:11:09,617 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:11:09,617 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:11:09,617 - DEBUG - sent to TCP: 56
+2024-09-11 15:11:09,617 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"container","i":"_2","p":"_1","c":["_3"],"alignment":"{\"x\":0,\"y\":0}","expand":"1","gradient":"{\"colors\":[\"#b2f3f6\",\"#9c96e1\"],\"tile_mode\":\"clamp\",\"stops\":[0.0,1.0],\"center\":{\"x\":0.0,\"y\":0.0},\"radius\":1.0,\"focal_radius\":0.0,\"type\":\"radial\"}"},{"t":"column","i":"_3","p":"_2","c":["_4"],"alignment":"center","n":"content","spacing":"20"},{"t":"image","i":"_4","p":"_3","c":[],"height":"200","src":"img/logoanimada.gif","width":"200"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:11:09,618 - DEBUG - sent to TCP: 753
+2024-09-11 15:11:13,627 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"497.0","height":"882.0","windowwidth":"513.0","windowheight":"921.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:13,628 - DEBUG - page.on_event_async: page change [{"i":"page","width":"497.0","height":"882.0","windowwidth":"513.0","windowheight":"921.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:13,628 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":497.0,\"height\":882.0}"}}
+2024-09-11 15:11:13,629 - DEBUG - page.on_event_async: page resized {"width":497.0,"height":882.0}
+2024-09-11 15:11:13,859 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"509.0","windowheight":"939.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:13,859 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"509.0","windowheight":"939.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:13,859 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"resized"}}
+2024-09-11 15:11:13,859 - DEBUG - page.on_event_async: page window_event resized
+2024-09-11 15:11:14,110 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"493.0","height":"900.0","windowwidth":"509.0","windowheight":"939.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:14,110 - DEBUG - page.on_event_async: page change [{"i":"page","width":"493.0","height":"900.0","windowwidth":"509.0","windowheight":"939.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:14,111 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":493.0,\"height\":900.0}"}}
+2024-09-11 15:11:14,111 - DEBUG - page.on_event_async: page resized {"width":493.0,"height":900.0}
+2024-09-11 15:11:14,618 - DEBUG - _process_command: clean ['page'] {}
+2024-09-11 15:11:14,618 - DEBUG - __send: {"action":"cleanControl","payload":{"ids":["page"]}}
+2024-09-11 15:11:14,618 - DEBUG - _process_command: set ['page'] {'title': 'Menu'}
+2024-09-11 15:11:14,618 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-09-11 15:11:14,618 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-09-11 15:11:14,619 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","title":"Menu"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_6"],"at":"0"},{"t":"container","i":"_6","p":"_1","c":["_7"],"alignment":"{\"x\":0,\"y\":0}","bgcolor":"#9c27b0","expand":"1"},{"t":"column","i":"_7","p":"_6","c":["_8","_9","_10"],"alignment":"center","n":"content","spacing":"20"},{"t":"elevatedbutton","i":"_8","p":"_7","c":[],"text":"Cadastrar"},{"t":"elevatedbutton","i":"_9","p":"_7","c":[],"text":"Logar"},{"t":"elevatedbutton","i":"_10","p":"_7","c":[],"text":"Fechar"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_5","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-09-11 15:11:14,619 - DEBUG - sent to TCP: 56
+2024-09-11 15:11:14,619 - DEBUG - sent to TCP: 780
+2024-09-11 15:11:15,286 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"509.0","windowheight":"939.0","windowtop":"28.0","windowleft":"748.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-09-11 15:11:15,286 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"509.0","windowheight":"939.0","windowtop":"28.0","windowleft":"748.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-09-11 15:11:15,287 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"moved"}}
+2024-09-11 15:11:15,287 - DEBUG - page.on_event_async: page window_event moved
+2024-09-11 15:11:27,149 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_10","eventName":"click","eventData":""}}
+2024-09-11 15:11:27,150 - DEBUG - page.on_event_async: _10 click 
+2024-09-11 15:11:27,150 - DEBUG - _process_command: set ['page'] {'windowclose': '1726078287.1506214'}
+2024-09-11 15:11:27,150 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1726078287.1506214"}]}}]}
+2024-09-11 15:11:27,151 - DEBUG - sent to TCP: 148
+2024-09-11 15:11:27,186 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-09-11 15:11:27,186 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-09-11 15:11:27,187 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-09-11 15:11:27,187 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-09-11 15:11:27,294 - DEBUG - Flet View process 10212
+2024-09-11 15:11:27,295 - DEBUG - Closing connection...
+2024-09-11 15:11:27,295 - DEBUG - Disconnecting all pages...
+2024-09-11 15:11:27,295 - DEBUG - page.on_event_async: page disconnect 
+2024-09-11 15:11:27,295 - DEBUG - Shutting down thread pool...

@@ -10,12 +10,20 @@ class SplashScreen:
         splash_container = ft.Container(
             content=ft.Column(
                 controls=[
-                    ft.Image(src="img\logoanimada.gif", width=200, height=200),
+                    ft.Image(src="img/logoanimada.gif", width=200, height=200),
                 ],
                 alignment="center",
                 spacing=20
             ),
-            bgcolor="#6a0dad",  # Fundo roxo
+            gradient=ft.RadialGradient(
+                center=ft.Alignment(0.0, 0.0),  # Centraliza o gradiente
+                radius=1.0,  # Ajusta o raio do gradiente
+                colors=[
+                    "#b2f3f6",  # Cor inicial
+                    "#9c96e1"   # Cor final
+                ],
+                stops=[0.0, 1.0]  # Paradas do gradiente
+            ),
             alignment=ft.alignment.center,
             expand=True
         )
@@ -23,7 +31,7 @@ class SplashScreen:
         self.page.add(splash_container)
         self.page.update()  # Força uma atualização da interface
 
-        # Aguarda por 10 segundos antes de navegar para a próxima tela
+        # Aguarda por 5 segundos antes de navegar para a próxima tela
         time.sleep(5)
 
         # Após o delay, navega para a tela de navegação
