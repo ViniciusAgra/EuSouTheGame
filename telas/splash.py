@@ -32,7 +32,7 @@ class SplashScreen:
         self.page.update()  # Força uma atualização da interface
 
         # Aguarda por 5 segundos antes de navegar para a próxima tela
-        time.sleep(5)
+        time.sleep(3)
 
         # Após o delay, navega para a tela de navegação
         self.navigate("menu")  # Chama a função de navegação

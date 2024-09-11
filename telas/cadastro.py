@@ -23,19 +23,15 @@ class CadastroScreen:
         
         if username and password:
             try:
-                # Tenta adicionar o usuário ao banco de dados
                 self.db.add_user(username, password)
                 self.page.snack_bar = ft.SnackBar(ft.Text("Cadastro realizado com sucesso"), bgcolor="#008000", open=True)
             except ValueError as ve:
-                # Caso o username já exista
                 self.page.snack_bar = ft.SnackBar(ft.Text(str(ve)), bgcolor="#ff0000", open=True)
                 logger.warning("Usuario Já Existente.")
             except Exception as ex:
-                # Caso ocorra outro erro
                 self.page.snack_bar = ft.SnackBar(ft.Text(f"Erro: {str(ex)}"), bgcolor="#ff0000", open=True)
                 logger.error(f"Erro inesperado ao tentar registrar usuário: {str(ex)}")
         else:
-            # Mensagem de erro se os campos não forem preenchidos
             self.page.snack_bar = ft.SnackBar(ft.Text("Por Favor Preencha Todos os Campos Antes de Continuar!"), bgcolor="#ff0000", open=True)
         
         self.page.update()
@@ -46,21 +42,48 @@ class CadastroScreen:
     def show(self):
         self.page.title = "Cadastro"
 
-        self.username_field = ft.TextField(label="Usuário", hint_text="Digite seu usuário")
-        self.password_field = ft.TextField(label="Senha", hint_text="Digite sua senha", password=True)
+        self.username_field = ft.TextField(
+            label="Usuário", 
+            hint_text="Digite seu usuário", 
+            width=300, 
+            bgcolor="#8c68ca",
+            border_color="#aeeef0",
+            border_width=2,
+            color="#aeeef0"  # Cor do texto inserido
+        )
+        self.password_field = ft.TextField(
+            label="Senha", 
+            hint_text="Digite sua senha", 
+            password=True, 
+            width=300, 
+            bgcolor="#8c68ca",
+            border_color="#aeeef0",
+            border_width=2,
+            color="#aeeef0"  # Cor do texto inserido
+        )
 
         cadastro_container = ft.Container(
             content=ft.Column(
                 controls=[
+                    ft.Image(src="img/logoanimada.gif", width=300, height=300),
                     self.username_field,
                     self.password_field,
                     ft.ElevatedButton("Registrar", on_click=self.on_register_click),
                     ft.TextButton("Voltar Ao Menu", on_click=self.on_menu_click)
                 ],
                 alignment="center",
+                horizontal_alignment="center",
                 spacing=20
             ),
-            bgcolor="#f0f0f0",
+            gradient=ft.RadialGradient(
+                center=ft.Alignment(0.0, 0.0),
+                radius=1.0,
+                colors=[
+                    "#78d1cd",
+                    "#9c96e1"
+                ],
+                stops=[0.0, 1.0]
+            ),
             alignment=ft.alignment.center,
             expand=True
         )

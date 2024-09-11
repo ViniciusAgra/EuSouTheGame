@@ -23,7 +23,6 @@ class LoginScreen:
 
         logging.info(f"Botão de login clicado. Usuário: '{username}'")
 
-        # Verifica se o usuário e a senha estão corretos
         if self.verify_login(username, password):
             logging.info(f"Usuário '{username}' fez login com sucesso.")
             self.navigate("Incoporar Tela", user_info={"username": username})
@@ -36,9 +35,8 @@ class LoginScreen:
         self.navigate("menu")
 
     def verify_login(self, username, password):
-        # Verifica se o usuário existe e se a senha está correta
         user = self.db.get_user_by_username(username)
-        if user and user[2] == password:  # Verifica se a senha corresponde
+        if user and user[2] == password:
             logging.info(f"Usuário '{username}' encontrado e senha corresponde.")
             return True
         else:
@@ -48,21 +46,48 @@ class LoginScreen:
     def show(self):
         self.page.title = "Login"
 
-        self.username_field = ft.TextField(label="Usuário", hint_text="Digite seu usuário")
-        self.password_field = ft.TextField(label="Senha", hint_text="Digite sua senha", password=True)
+        self.username_field = ft.TextField(
+            label="Usuário", 
+            hint_text="Digite seu usuário", 
+            width=300, 
+            bgcolor="#8c68ca",
+            border_color="#aeeef0",
+            border_width=2,
+            color="#aeeef0"  # Cor do texto inserido
+        )
+        self.password_field = ft.TextField(
+            label="Senha", 
+            hint_text="Digite sua senha", 
+            password=True, 
+            width=300, 
+            bgcolor="#8c68ca",
+            border_color="#aeeef0",
+            border_width=2,
+            color="#aeeef0"  # Cor do texto inserido
+        )
 
         login_container = ft.Container(
             content=ft.Column(
                 controls=[
+                    ft.Image(src="img/logoanimada.gif", width=300, height=300),
                     self.username_field,
                     self.password_field,
                     ft.ElevatedButton("Login", on_click=self.on_login_click),
                     ft.TextButton("Voltar Ao Menu", on_click=self.on_menu_click)
                 ],
                 alignment="center",
+                horizontal_alignment="center",
                 spacing=20
             ),
-            bgcolor="#f0f0f0",
+            gradient=ft.RadialGradient(
+                center=ft.Alignment(0.0, 0.0),
+                radius=1.0,
+                colors=[
+                    "#78d1cd",
+                    "#9c96e1"
+                ],
+                stops=[0.0, 1.0]
+            ),
             alignment=ft.alignment.center,
             expand=True
         )
