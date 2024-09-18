@@ -69,7 +69,7 @@ class CadastroScreen:
                     self.username_field,
                     self.password_field,
                     ft.ElevatedButton("Registrar", on_click=self.on_register_click),
-                    ft.TextButton("Voltar Ao Menu", on_click=self.on_menu_click)
+                    ft.TextButton("Voltar Ao Menu", on_click=self.on_menu_click,style=ft.ButtonStyle(color=ft.colors.BLACK))
                 ],
                 alignment="center",
                 horizontal_alignment="center",

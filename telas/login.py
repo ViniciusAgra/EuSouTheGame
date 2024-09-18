@@ -73,7 +73,7 @@ class LoginScreen:
                     self.username_field,
                     self.password_field,
                     ft.ElevatedButton("Login", on_click=self.on_login_click),
-                    ft.TextButton("Voltar Ao Menu", on_click=self.on_menu_click)
+                    ft.TextButton("Voltar Ao Menu", on_click=self.on_menu_click,style=ft.ButtonStyle(color=ft.colors.BLACK))
                 ],
                 alignment="center",
                 horizontal_alignment="center",
