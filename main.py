@@ -5,6 +5,7 @@ from telas.cadastro import CadastroScreen
 from telas.login import LoginScreen
 from telas.menu import MenuScreen
 #from telas.personalizado import PersonalizadoScreen
+from telas.principal import PrincipalScreen
 from telas.splash import SplashScreen
 #from telas.temas import TemasScreen
 from database import Database
@@ -16,7 +17,7 @@ def main(page: ft.Page):
         if screen == "splash":
             SplashScreen(page, navigate).show()
         #elif screen == "configura":
-        #    ConfiguraScreen(page, navigate).show()
+        #   ConfiguraScreen(page, navigate).show()
         elif screen == "menu":
             MenuScreen(page, navigate).show()
         elif screen == "cadastro":
@@ -24,9 +25,11 @@ def main(page: ft.Page):
         elif screen == "login":
             LoginScreen(page, navigate).show()
         #elif screen == "personalizado":
-        #    PersonalizadoScreen(page, navigate).show()
+        #   PersonalizadoScreen(page, navigate).show()
+        elif screen == "principal":
+            PrincipalScreen(page, navigate).show()
         #elif screen == "temas":
-        #    TemasScreen(page, navigate).show()
+        #   TemasScreen(page, navigate).show()
 
     navigate("splash")
 
