@@ -25,7 +25,7 @@ class LoginScreen:
 
         if self.verify_login(username, password):
             logging.info(f"Usuário '{username}' fez login com sucesso.")
-            self.navigate("principal")
+            self.navigate("temas")
         else:
             logging.warning(f"Tentativa de login falhou para o usuário '{username}'.")
             self.page.snack_bar = ft.SnackBar(ft.Text("Usuário ou senha incorretos"), bgcolor="#ff0000", open=True)

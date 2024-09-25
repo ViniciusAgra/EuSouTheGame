@@ -59,7 +59,23 @@ class TemasScreen:
 
     def show(self):
         self.page.title = "Temas"
-        banner = ft.Image(src="img/BannerConfig.png", width=self.page.width, height=100)
+
+        # Criação de um container com gradiente linear ocupando toda a largura
+        banner = ft.Container(
+            gradient=ft.LinearGradient(
+                begin=ft.Alignment(-1, 0),  # Começo do gradiente (esquerda)
+                end=ft.Alignment(1, 0),      # Fim do gradiente (direita)
+                colors=["#93e4ed", "#e7baff", "#93e4ed"]
+            ),
+            width=self.page.width,  # Define a largura como a largura da tela
+            height=100  # Altura do banner
+        )
+
+        # Adicionando um texto para verificar se o banner aparece
+        banner.content = ft.Row(
+            controls=[ft.Image(src="img/BannerConfig.png",)],
+            alignment=ft.MainAxisAlignment.CENTER
+        )
 
         # Criação dos containers individuais
         container1 = self.create_container_duracao()
@@ -69,12 +85,7 @@ class TemasScreen:
         # Criação de um layout de coluna que alinha o banner e os containers
         content = ft.Column(
             controls=[
-                ft.Container(
-                    content=banner,
-                    width=self.page.width,
-                    padding=0,
-                    margin=0
-                ),
+                banner,  # Adiciona o banner com gradiente aqui
                 container1,
                 container2,
                 container3,
@@ -82,7 +93,8 @@ class TemasScreen:
                     content=ft.Image(src="img/SairBt.png", width=200, height=100),
                     on_tap=self.on_close_click,
                     mouse_cursor="click"
-                )
+                ),
+                self.create_nav_bar()  # Adiciona a navbar na parte inferior
             ],
             spacing=20
         )
@@ -90,5 +102,25 @@ class TemasScreen:
         self.page.add(content)
         self.page.update()
 
+    def create_nav_bar(self):
+        return ft.Row(
+            controls=[
+                ft.TextButton("Personalizado", on_click=self.on_personalizado_click),
+                ft.TextButton("Temas", on_click=self.on_temas_click),
+                ft.TextButton("Configuração", on_click=self.on_configura_click),
+            ],
+            alignment=ft.MainAxisAlignment.SPACE_AROUND,  # Espaçamento dos botões
+        )
+
     def on_close_click(self, e):
         self.page.window_close()
+        
+    # Métodos para navegar entre telas
+    def on_personalizado_click(self, e):
+        self.navigate("personalizado")  # Substitua pelo método de navegação correto
+
+    def on_temas_click(self, e):
+        self.navigate("temas")  # Substitua pelo método de navegação correto
+
+    def on_configura_click(self, e):
+        self.navigate("configura")  # Substitua pelo método de navegação correto
