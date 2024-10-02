@@ -17,7 +17,8 @@ class ConfiguraScreen:
                     ),
                     ft.Text("Seg")
                 ],
-                spacing=10
+                spacing=10,
+                alignment=ft.MainAxisAlignment.CENTER  # Centraliza o conteúdo
             ),
             bgcolor="#95e3eb",
             border_radius=10,
@@ -33,7 +34,8 @@ class ConfiguraScreen:
                     ft.Text("Música"),
                     ft.Switch(value=False)
                 ],
-                spacing=10
+                spacing=10,
+                alignment=ft.MainAxisAlignment.CENTER  # Centraliza o conteúdo
             ),
             bgcolor="#95e3eb",
             border_radius=10,
@@ -49,7 +51,8 @@ class ConfiguraScreen:
                     ft.Text("Vibrar"),
                     ft.Switch(value=False)
                 ],
-                spacing=10
+                spacing=10,
+                alignment=ft.MainAxisAlignment.CENTER  # Centraliza o conteúdo
             ),
             bgcolor="#95e3eb",
             border_radius=10,
@@ -73,7 +76,7 @@ class ConfiguraScreen:
 
         # Adicionando um texto para verificar se o banner aparece
         banner.content = ft.Row(
-            controls=[ft.Image(src="img/BannerConfig.png",)],
+            controls=[ft.Image(src="img/BannerConfig.png")],
             alignment=ft.MainAxisAlignment.CENTER
         )
 
@@ -89,17 +92,34 @@ class ConfiguraScreen:
                 container1,
                 container2,
                 container3,
-                ft.GestureDetector(
-                    content=ft.Image(src="img/SairBt.png", width=200, height=100),
-                    on_tap=self.on_close_click,
-                    mouse_cursor="click"
-                ),
-                self.create_nav_bar()  # Adiciona a navbar na parte inferior
+                ft.Row(  # Colocando o botão em um Row para centralizar
+                    controls=[
+                        ft.GestureDetector(
+                            content=ft.Image(src="img/SairBt.png", width=200, height=100),
+                            on_tap=self.on_close_click,
+                            mouse_cursor="click"
+                        )
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER  # Centraliza o botão
+                )
             ],
-            spacing=20
+            spacing=20,
+            alignment=ft.MainAxisAlignment.START,  # Garante que o conteúdo comece do topo
         )
 
-        self.page.add(content)
+        # Criação de um layout que ocupa toda a tela
+        main_container = ft.Column(
+            controls=[
+                content,
+                ft.Container(expand=True),  # Container vazio para ocupar o restante do espaço
+                self.create_nav_bar()  # Colocando a navbar aqui
+            ],
+            alignment=ft.MainAxisAlignment.START,  # Garante que tudo comece do topo
+            height=self.page.height  # Força a altura do container principal
+        )
+
+        # Adiciona o container principal na página
+        self.page.add(main_container)
         self.page.update()
 
     def create_nav_bar(self):
