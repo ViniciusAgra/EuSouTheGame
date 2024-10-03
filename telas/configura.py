@@ -10,12 +10,12 @@ class ConfiguraScreen:
             content=ft.Row(
                 controls=[
                     ft.Image(src="img/relogiologo.png", width=50, height=50),
-                    ft.Text("Duração"),
+                    ft.Text("Duração", color="black"),  # Texto preto
                     ft.TextField(
                         label="Seg",
                         width=100
                     ),
-                    ft.Text("Seg")
+                    ft.Text("Seg", color="black")  # Texto preto
                 ],
                 spacing=10,
                 alignment=ft.MainAxisAlignment.CENTER  # Centraliza o conteúdo
@@ -31,7 +31,7 @@ class ConfiguraScreen:
             content=ft.Row(
                 controls=[
                     ft.Image(src="img/musiclogo.png", width=50, height=50),
-                    ft.Text("Música"),
+                    ft.Text("Música", color="black"),  # Texto preto
                     ft.Switch(value=False)
                 ],
                 spacing=10,
@@ -48,7 +48,7 @@ class ConfiguraScreen:
             content=ft.Row(
                 controls=[
                     ft.Image(src="img/vibrarlogo.png", width=50, height=50),
-                    ft.Text("Vibrar"),
+                    ft.Text("Vibrar", color="black"),  # Texto preto
                     ft.Switch(value=False)
                 ],
                 spacing=10,
@@ -107,14 +107,21 @@ class ConfiguraScreen:
             alignment=ft.MainAxisAlignment.START,  # Garante que o conteúdo comece do topo
         )
 
-        # Criação de um layout que ocupa toda a tela
-        main_container = ft.Column(
-            controls=[
-                content,
-                ft.Container(expand=True),  # Container vazio para ocupar o restante do espaço
-                self.create_nav_bar()  # Colocando a navbar aqui
-            ],
-            alignment=ft.MainAxisAlignment.START,  # Garante que tudo comece do topo
+        # Criação de um layout que ocupa toda a tela com gradiente de fundo
+        main_container = ft.Container(
+            content=ft.Column(
+                controls=[
+                    content,
+                    ft.Container(expand=True),  # Container vazio para ocupar o restante do espaço
+                    self.create_nav_bar()  # Colocando a navbar aqui
+                ],
+                alignment=ft.MainAxisAlignment.START,  # Garante que tudo comece do topo
+            ),
+            gradient=ft.LinearGradient(
+                begin=ft.Alignment(0, -1),  # Começa no topo
+                end=ft.Alignment(0, 1),     # Vai até o final da tela
+                colors=["#e5f6f8", "#f2feff"]  # Gradiente de 180° com as cores especificadas
+            ),
             height=self.page.height  # Força a altura do container principal
         )
 
@@ -125,9 +132,21 @@ class ConfiguraScreen:
     def create_nav_bar(self):
         return ft.Row(
             controls=[
-                ft.TextButton("Personalizado", on_click=self.on_personalizado_click),
-                ft.TextButton("Temas", on_click=self.on_temas_click),
-                ft.TextButton("Configuração", on_click=self.on_configura_click),
+                ft.TextButton(
+                    "Personalizado", 
+                    on_click=self.on_personalizado_click, 
+                    style=ft.ButtonStyle(color="black")  # Cor preta no botão
+                ),
+                ft.TextButton(
+                    "Temas", 
+                    on_click=self.on_temas_click, 
+                    style=ft.ButtonStyle(color="black")  # Cor preta no botão
+                ),
+                ft.TextButton(
+                    "Configuração", 
+                    on_click=self.on_configura_click, 
+                    style=ft.ButtonStyle(color="black")  # Cor preta no botão
+                ),
             ],
             alignment=ft.MainAxisAlignment.SPACE_AROUND,  # Espaçamento dos botões
         )
