@@ -5,30 +5,31 @@ class TemasScreen:
         self.page = page
         self.navigate = navigate
 
-    def create_category_button(self, image_src, category_name):
-        return ft.Container(
-            width=150,
-            height=150,
-            bgcolor="transparent",
-            border_radius=10,
-            padding=10,
-            margin=10,
-            content=ft.Stack(
-                controls=[
-                    ft.Image(src=image_src, fit=ft.ImageFit.COVER, width=150, height=150),
-                    ft.TextButton(
-                        " ",  # Adicione um espaço para o botão ser clicável
-                        width=150,
-                        height=150,
-                        on_click=lambda e: self.navigate(category_name),  # Navegação ao clicar
-                        style=ft.ButtonStyle(
-                            bgcolor=ft.colors.TRANSPARENT,
-                            hover_bgcolor=ft.colors.TRANSPARENT,
-                        )
-                    )
-                ]
+    def create_category_button(self, image_src):
+        return ft.TextButton(
+            content=ft.Container(
+                width=150,
+                height=150,
+                bgcolor="transparent",  # Fundo transparente para ver a imagem de fundo
+                border_radius=10,
+                padding=10,
+                margin=10,
+                # Utilizando a imagem como fundo
+                content=ft.Stack(
+                    controls=[
+                        ft.Image(src=image_src, fit=ft.ImageFit.COVER, width=150, height=150),
+                    ]
+                )
+            ),
+            on_click=self.on_category_button_click,
+            style=ft.ButtonStyle(
+                shape=ft.RoundedRectangleBorder(radius=10),
+                overlay_color="transparent"  # Remove a cor de fundo ao passar o mouse
             )
         )
+
+    def on_category_button_click(self, e):
+        self.navigate("jogo")  # Navegação para a página "jogo.py"
 
     def show(self):
         self.page.title = "Categorias"
@@ -36,12 +37,12 @@ class TemasScreen:
         # Banner com o título "CATEGORIAS"
         banner = ft.Container(
             gradient=ft.LinearGradient(
-                begin=ft.Alignment(-1, 0),
-                end=ft.Alignment(1, 0),
+                begin=ft.Alignment(-1, 0),  # Começo do gradiente (esquerda)
+                end=ft.Alignment(1, 0),      # Fim do gradiente (direita)
                 colors=["#93e4ed", "#e7baff", "#93e4ed"]
             ),
-            width=self.page.width,
-            height=100
+            width=self.page.width,  # Define a largura como a largura da tela
+            height=100  # Altura do banner
         )
 
         # Adicionando um texto para verificar se o banner aparece
@@ -55,20 +56,20 @@ class TemasScreen:
             controls=[
                 ft.Row(
                     controls=[
-                        self.create_category_button("img/categoria_animais.png", "jogo"),
-                        self.create_category_button("img/categoria_filmes.png", "jogo"),
+                        self.create_category_button("img/categoria_animais.png"),
+                        self.create_category_button("img/categoria_filmes.png"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
                 ft.Row(
                     controls=[
-                        self.create_category_button("img/categoria_acao.png", "jogo"),
-                        self.create_category_button("img/categoria_desenhos.png", "jogo"),
+                        self.create_category_button("img/categoria_acao.png"),
+                        self.create_category_button("img/categoria_desenhos.png"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
             ],
-            alignment=ft.MainAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.CENTER,  # Centraliza as linhas
         )
 
         # Layout principal da tela
@@ -78,7 +79,7 @@ class TemasScreen:
                 grid,
             ],
             spacing=20,
-            alignment=ft.MainAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.CENTER,  # Garante que o conteúdo comece do topo
         )
 
         # Criação de um layout que ocupa toda a tela com gradiente de fundo
@@ -86,17 +87,17 @@ class TemasScreen:
             content=ft.Column(
                 controls=[
                     content,
-                    ft.Container(expand=True),
-                    self.create_nav_bar()
+                    ft.Container(expand=True),  # Container vazio para ocupar o restante do espaço
+                    self.create_nav_bar()  # Colocando a navbar aqui
                 ],
-                alignment=ft.MainAxisAlignment.START,
+                alignment=ft.MainAxisAlignment.START,  # Garante que tudo comece do topo
             ),
             gradient=ft.LinearGradient(
-                begin=ft.Alignment(0, -1),
-                end=ft.Alignment(0, 1),
-                colors=["#e5f6f8", "#f2feff"]
+                begin=ft.Alignment(0, -1),  # Começa no topo
+                end=ft.Alignment(0, 1),     # Vai até o final da tela
+                colors=["#e5f6f8", "#f2feff"]  # Gradiente de 180° com as cores especificadas
             ),
-            height=self.page.height
+            height=self.page.height  # Força a altura do container principal
         )
 
         # Adiciona o container principal na página
