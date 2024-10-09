@@ -5,122 +5,135 @@ class TemasScreen:
         self.page = page
         self.navigate = navigate
 
-    def create_container_duracao(self):
+    def create_category_button(self, image_src, category_name):
         return ft.Container(
-            content=ft.Row(
-                controls=[
-                    ft.Image(src="img/relogiologo.png", width=50, height=50),
-                    ft.Text("Duração"),
-                    ft.TextField(
-                        label="Seg",
-                        width=100
-                    ),
-                    ft.Text("Seg")
-                ],
-                spacing=10
-            ),
-            bgcolor="#95e3eb",
+            width=150,
+            height=150,
+            bgcolor="transparent",
             border_radius=10,
             padding=10,
-            margin=10
-        )
-
-    def create_container_musica(self):
-        return ft.Container(
-            content=ft.Row(
+            margin=10,
+            content=ft.Stack(
                 controls=[
-                    ft.Image(src="img/musiclogo.png", width=50, height=50),
-                    ft.Text("Música"),
-                    ft.Switch(value=False)
-                ],
-                spacing=10
-            ),
-            bgcolor="#95e3eb",
-            border_radius=10,
-            padding=10,
-            margin=10
-        )
-
-    def create_container_vibrar(self):
-        return ft.Container(
-            content=ft.Row(
-                controls=[
-                    ft.Image(src="img/vibrarlogo.png", width=50, height=50),
-                    ft.Text("Vibrar"),
-                    ft.Switch(value=False)
-                ],
-                spacing=10
-            ),
-            bgcolor="#95e3eb",
-            border_radius=10,
-            padding=10,
-            margin=10
+                    ft.Image(src=image_src, fit=ft.ImageFit.COVER, width=150, height=150),
+                    ft.TextButton(
+                        " ",  # Adicione um espaço para o botão ser clicável
+                        width=150,
+                        height=150,
+                        on_click=lambda e: self.navigate(category_name),  # Navegação ao clicar
+                        style=ft.ButtonStyle(
+                            bgcolor=ft.colors.TRANSPARENT,
+                            hover_bgcolor=ft.colors.TRANSPARENT,
+                        )
+                    )
+                ]
+            )
         )
 
     def show(self):
-        self.page.title = "Temas"
+        self.page.title = "Categorias"
 
-        # Criação de um container com gradiente linear ocupando toda a largura
+        # Banner com o título "CATEGORIAS"
         banner = ft.Container(
             gradient=ft.LinearGradient(
-                begin=ft.Alignment(-1, 0),  # Começo do gradiente (esquerda)
-                end=ft.Alignment(1, 0),      # Fim do gradiente (direita)
+                begin=ft.Alignment(-1, 0),
+                end=ft.Alignment(1, 0),
                 colors=["#93e4ed", "#e7baff", "#93e4ed"]
             ),
-            width=self.page.width,  # Define a largura como a largura da tela
-            height=100  # Altura do banner
+            width=self.page.width,
+            height=100
         )
 
         # Adicionando um texto para verificar se o banner aparece
         banner.content = ft.Row(
-            controls=[ft.Image(src="img/BannerConfig.png",)],
+            controls=[ft.Image(src="img/BannerCateg.png")],
             alignment=ft.MainAxisAlignment.CENTER
         )
 
-        # Criação dos containers individuais
-        container1 = self.create_container_duracao()
-        container2 = self.create_container_musica()
-        container3 = self.create_container_vibrar()
-
-        # Criação de um layout de coluna que alinha o banner e os containers
-        content = ft.Column(
+        # Criação dos botões de categoria em um layout 2x2
+        grid = ft.Column(
             controls=[
-                banner,  # Adiciona o banner com gradiente aqui
-                container1,
-                container2,
-                container3,
-                ft.GestureDetector(
-                    content=ft.Image(src="img/SairBt.png", width=200, height=100),
-                    on_tap=self.on_close_click,
-                    mouse_cursor="click"
+                ft.Row(
+                    controls=[
+                        self.create_category_button("img/categoria_animais.png", "jogo"),
+                        self.create_category_button("img/categoria_filmes.png", "jogo"),
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER
                 ),
-                self.create_nav_bar()  # Adiciona a navbar na parte inferior
+                ft.Row(
+                    controls=[
+                        self.create_category_button("img/categoria_acao.png", "jogo"),
+                        self.create_category_button("img/categoria_desenhos.png", "jogo"),
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER
+                ),
             ],
-            spacing=20
+            alignment=ft.MainAxisAlignment.CENTER,
         )
 
-        self.page.add(content)
+        # Layout principal da tela
+        content = ft.Column(
+            controls=[
+                banner,
+                grid,
+            ],
+            spacing=20,
+            alignment=ft.MainAxisAlignment.CENTER,
+        )
+
+        # Criação de um layout que ocupa toda a tela com gradiente de fundo
+        main_container = ft.Container(
+            content=ft.Column(
+                controls=[
+                    content,
+                    ft.Container(expand=True),
+                    self.create_nav_bar()
+                ],
+                alignment=ft.MainAxisAlignment.START,
+            ),
+            gradient=ft.LinearGradient(
+                begin=ft.Alignment(0, -1),
+                end=ft.Alignment(0, 1),
+                colors=["#e5f6f8", "#f2feff"]
+            ),
+            height=self.page.height
+        )
+
+        # Adiciona o container principal na página
+        self.page.add(main_container)
         self.page.update()
 
     def create_nav_bar(self):
-        return ft.Row(
-            controls=[
-                ft.TextButton("Personalizado", on_click=self.on_personalizado_click),
-                ft.TextButton("Temas", on_click=self.on_temas_click),
-                ft.TextButton("Configuração", on_click=self.on_configura_click),
-            ],
-            alignment=ft.MainAxisAlignment.SPACE_AROUND,  # Espaçamento dos botões
+        return ft.Container(
+            content=ft.Row(
+                controls=[
+                    ft.TextButton(
+                        "Personalizado",
+                        on_click=self.on_personalizado_click,
+                        style=ft.ButtonStyle(color="black")
+                    ),
+                    ft.TextButton(
+                        "Temas",
+                        on_click=self.on_temas_click,
+                        style=ft.ButtonStyle(color="black")
+                    ),
+                    ft.TextButton(
+                        "Configuração",
+                        on_click=self.on_configura_click,
+                        style=ft.ButtonStyle(color="black")
+                    ),
+                ],
+                alignment=ft.MainAxisAlignment.SPACE_AROUND,
+                height=60
+            ),
+            bgcolor="#93e4ed",
         )
 
-    def on_close_click(self, e):
-        self.page.window_close()
-        
-    # Métodos para navegar entre telas
     def on_personalizado_click(self, e):
-        self.navigate("personalizado")  # Substitua pelo método de navegação correto
+        self.navigate("personalizado")
 
     def on_temas_click(self, e):
-        self.navigate("temas")  # Substitua pelo método de navegação correto
+        self.navigate("temas")
 
     def on_configura_click(self, e):
-        self.navigate("configura")  # Substitua pelo método de navegação correto
+        self.navigate("configura")

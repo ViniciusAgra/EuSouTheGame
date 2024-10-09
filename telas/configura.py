@@ -130,25 +130,29 @@ class ConfiguraScreen:
         self.page.update()
 
     def create_nav_bar(self):
-        return ft.Row(
-            controls=[
-                ft.TextButton(
-                    "Personalizado", 
-                    on_click=self.on_personalizado_click, 
-                    style=ft.ButtonStyle(color="black")  # Cor preta no botão
-                ),
-                ft.TextButton(
-                    "Temas", 
-                    on_click=self.on_temas_click, 
-                    style=ft.ButtonStyle(color="black")  # Cor preta no botão
-                ),
-                ft.TextButton(
-                    "Configuração", 
-                    on_click=self.on_configura_click, 
-                    style=ft.ButtonStyle(color="black")  # Cor preta no botão
-                ),
-            ],
-            alignment=ft.MainAxisAlignment.SPACE_AROUND,  # Espaçamento dos botões
+        return ft.Container(
+            content=ft.Row(
+                controls=[
+                    ft.TextButton(
+                        "Personalizado",
+                        on_click=self.on_personalizado_click,
+                        style=ft.ButtonStyle(color="black")
+                    ),
+                    ft.TextButton(
+                        "Temas",
+                        on_click=self.on_temas_click,
+                        style=ft.ButtonStyle(color="black")
+                    ),
+                    ft.TextButton(
+                        "Configuração",
+                        on_click=self.on_configura_click,
+                        style=ft.ButtonStyle(color="purple")
+                    ),
+                ],
+                alignment=ft.MainAxisAlignment.SPACE_AROUND,
+                height=60
+            ),
+            bgcolor="#93e4ed",
         )
 
     def on_close_click(self, e):
