@@ -7,13 +7,15 @@ class Database:
         self.create_tables()
 
     def create_tables(self):
-        self.cursor.execute('''CREATE TABLE IF NOT EXISTS 
-                            users(
-                                id INTEGER PRIMARY KEY AUTOINCREMENT, 
-                                username TEXT NOT NULL,
-                                password TEXT NOT NULL
-                                )'''
-                           )
+        # Altera a tabela users para adicionar a coluna TempoPartida
+        self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS users(
+                id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                username TEXT NOT NULL,
+                password TEXT NOT NULL,
+                TempoPartida INTEGER DEFAULT 60  -- Adiciona a nova coluna com valor padrão
+            )
+        ''')
         self.conn.commit()
 
     def add_user(self, username, password):
@@ -23,10 +25,10 @@ class Database:
             raise ValueError("Username já existe")
 
         # Adiciona o usuário se o username não existir
-        self.cursor.execute('''INSERT INTO users(username, password) 
-                            VALUES (?, ?)''',
-                            (username, password)
-                        )
+        self.cursor.execute('''INSERT INTO users(username, password, TempoPartida) 
+                               VALUES (?, ?, ?)''',  # Inclui TempoPartida na inserção
+                               (username, password, 60)  # Define TempoPartida como 60
+        )
         self.conn.commit()
 
     def verify_user(self, username, password):
@@ -37,7 +39,11 @@ class Database:
     def get_user_by_username(self, username):
         self.cursor.execute('''SELECT * FROM users WHERE username = ?''', (username,))
         return self.cursor.fetchone()  # Retorna a linha do usuário ou None se não encontrado
-
+    
+    def get_tempo_partida(self, username):
+        self.cursor.execute('''SELECT TempoPartida FROM users WHERE username = ?''', (username,))
+        result = self.cursor.fetchone()
+        return result[0] if result else None  # Retorna o valor ou None se não encontrado
 
 
     def close(self):

@@ -1,9 +1,13 @@
 import flet as ft
+from database import Database  # Importa a classe Database
 
 class ConfiguraScreen:
     def __init__(self, page: ft.Page, navigate):
         self.page = page
         self.navigate = navigate
+        self.db = Database()  # Instância do banco de dados
+        self.username = "seu_username"  # Substitua pelo nome de usuário apropriado
+        self.tempo_segundos = self.db.get_tempo_partida(self.username) or 60  # Usa o valor do banco de dados ou 60
 
     def create_container_duracao(self):
         return ft.Container(
@@ -13,7 +17,9 @@ class ConfiguraScreen:
                     ft.Text("Duração", color="black"),  # Texto preto
                     ft.TextField(
                         label="Seg",
-                        width=100
+                        width=100,
+                        value=str(self.tempo_segundos),  # Usa o valor obtido do banco de dados
+                        on_change=self.on_duracao_change  # Atualiza ao alterar
                     ),
                     ft.Text("Seg", color="black")  # Texto preto
                 ],
@@ -25,6 +31,18 @@ class ConfiguraScreen:
             padding=10,
             margin=10
         )
+
+    def on_duracao_change(self, e):
+        try:
+            # Atualiza a variável com o valor do TextField
+            self.tempo_segundos = int(e.control.value)
+            # Atualiza o valor no banco de dados
+            self.db.cursor.execute('''UPDATE users SET TempoPartida = ? WHERE username = ?''', 
+                                    (self.tempo_segundos, self.username))
+            self.db.conn.commit()
+        except ValueError:
+            # Se o valor não for um número, você pode optar por lidar com isso
+            pass
 
     def create_container_musica(self):
         return ft.Container(
@@ -61,7 +79,7 @@ class ConfiguraScreen:
         )
 
     def show(self):
-        self.page.title = "Temas"
+        self.page.title = "Configurações"
 
         # Criação de um container com gradiente linear ocupando toda a largura
         banner = ft.Container(
@@ -157,7 +175,7 @@ class ConfiguraScreen:
 
     def on_close_click(self, e):
         self.page.window_close()
-        
+
     # Métodos para navegar entre telas
     def on_personalizado_click(self, e):
         self.navigate("personalizado")  # Substitua pelo método de navegação correto

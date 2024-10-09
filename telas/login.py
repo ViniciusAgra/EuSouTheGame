@@ -11,6 +11,9 @@ logging.basicConfig(
 
 logger = logging.getLogger()
 
+# Variável global para armazenar o nome do usuário
+current_user = None
+
 class LoginScreen:
     def __init__(self, page: ft.Page, navigate):
         self.page = page
@@ -24,7 +27,10 @@ class LoginScreen:
         logging.info(f"Botão de login clicado. Usuário: '{username}'")
 
         if self.verify_login(username, password):
-            logging.info(f"Usuário '{username}' fez login com sucesso.")
+            global current_user  # Use a variável global
+            current_user = username  # Armazena o nome do usuário logado
+            logging.info(f"Usuario '{username}' fez login com sucesso.")
+            logging.info(f"Usuario atual setado como: {current_user}")  # Mensagem de log
             self.navigate("temas")
         else:
             logging.warning(f"Tentativa de login falhou para o usuário '{username}'.")
@@ -37,10 +43,10 @@ class LoginScreen:
     def verify_login(self, username, password):
         user = self.db.get_user_by_username(username)
         if user and user[2] == password:
-            logging.info(f"Usuário '{username}' encontrado e senha corresponde.")
+            logging.info(f"Usuario '{username}' encontrado e senha corresponde.")
             return True
         else:
-            logging.info(f"Usuário '{username}' não encontrado ou senha incorreta.")
+            logging.info(f"Usuario '{username}' não encontrado ou senha incorreta.")
             return False
 
     def show(self):
@@ -73,7 +79,7 @@ class LoginScreen:
                     self.username_field,
                     self.password_field,
                     ft.ElevatedButton("Login", on_click=self.on_login_click),
-                    ft.TextButton("Voltar Ao Menu", on_click=self.on_menu_click,style=ft.ButtonStyle(color=ft.colors.BLACK))
+                    ft.TextButton("Voltar Ao Menu", on_click=self.on_menu_click, style=ft.ButtonStyle(color=ft.colors.BLACK))
                 ],
                 alignment="center",
                 horizontal_alignment="center",
