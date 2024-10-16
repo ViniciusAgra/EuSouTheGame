@@ -6,6 +6,7 @@ class Database:
         self.conn = sqlite3.connect(db_name)
         self.cursor = self.conn.cursor()
         logging.info("Conexão ao banco de dados estabelecida.")
+        self.create_tables()  # Adiciona esta chamada
 
     def create_tables(self):
         # Certifique-se de que a tabela de usuários exista
