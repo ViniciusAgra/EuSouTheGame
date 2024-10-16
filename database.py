@@ -21,11 +21,18 @@ class Database:
 
     def add_user(self, username, password):
         try:
+            # Verifica se o usuário já existe antes de tentar adicionar
+            if self.get_user_by_username(username):
+                raise ValueError("Usuário já existe.")
+            
             self.cursor.execute('''INSERT INTO users (username, password) VALUES (?, ?)''', (username, password))
             self.conn.commit()
             logging.info(f"Usuário '{username}' adicionado com sucesso.")
+            
         except sqlite3.IntegrityError:
             logging.error(f"Erro ao adicionar usuário '{username}': Usuário já existe.")
+            raise ValueError("Usuário já existe.")  # Levanta uma exceção se o usuário já existir
+
 
     def get_user_by_username(self, username):
         self.cursor.execute('''SELECT * FROM users WHERE username = ?''', (username,))
