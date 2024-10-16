@@ -1,5 +1,6 @@
 import flet as ft
 import logging
+import json
 from database import Database
 
 logging.basicConfig(
@@ -11,9 +12,6 @@ logging.basicConfig(
 
 logger = logging.getLogger()
 
-# Variável global para armazenar o nome do usuário
-current_user = None
-
 class LoginScreen:
     def __init__(self, page: ft.Page, navigate):
         self.page = page
@@ -24,18 +22,20 @@ class LoginScreen:
         username = self.username_field.value
         password = self.password_field.value
 
-        logging.info(f"Botão de login clicado. Usuário: '{username}'")
+        logger.info(f"Botão de login clicado. Usuário: '{username}'")
 
         if self.verify_login(username, password):
-            global current_user  # Use a variável global
-            current_user = username  # Armazena o nome do usuário logado
-            logging.info(f"Usuario '{username}' fez login com sucesso.")
-            logging.info(f"Usuario atual setado como: {current_user}")  # Mensagem de log
+            self.save_current_user(username)  # Salva o usuário atual em JSON
+            logger.info(f"Usuário '{username}' fez login com sucesso.")
             self.navigate("temas")
         else:
-            logging.warning(f"Tentativa de login falhou para o usuário '{username}'.")
+            logger.warning(f"Tentativa de login falhou para o usuário '{username}'.")
             self.page.snack_bar = ft.SnackBar(ft.Text("Usuário ou senha incorretos"), bgcolor="#ff0000", open=True)
             self.page.update()
+
+    def save_current_user(self, username):
+        with open('user_data.json', 'w') as f:
+            json.dump({'current_user': username}, f)
 
     def on_menu_click(self, e):
         self.navigate("menu")
@@ -43,10 +43,10 @@ class LoginScreen:
     def verify_login(self, username, password):
         user = self.db.get_user_by_username(username)
         if user and user[2] == password:
-            logging.info(f"Usuario '{username}' encontrado e senha corresponde.")
+            logger.info(f"Usuário '{username}' encontrado e senha corresponde.")
             return True
         else:
-            logging.info(f"Usuario '{username}' não encontrado ou senha incorreta.")
+            logger.info(f"Usuário '{username}' não encontrado ou senha incorreta.")
             return False
 
     def show(self):
@@ -59,7 +59,7 @@ class LoginScreen:
             bgcolor="#8c68ca",
             border_color="#aeeef0",
             border_width=2,
-            color="#aeeef0"  # Cor do texto inserido
+            color="#aeeef0"
         )
         self.password_field = ft.TextField(
             label="Senha", 
@@ -69,7 +69,7 @@ class LoginScreen:
             bgcolor="#8c68ca",
             border_color="#aeeef0",
             border_width=2,
-            color="#aeeef0"  # Cor do texto inserido
+            color="#aeeef0"
         )
 
         login_container = ft.Container(
@@ -88,10 +88,7 @@ class LoginScreen:
             gradient=ft.RadialGradient(
                 center=ft.Alignment(0.0, 0.0),
                 radius=1.0,
-                colors=[
-                    "#78d1cd",
-                    "#9c96e1"
-                ],
+                colors=["#78d1cd", "#9c96e1"],
                 stops=[0.0, 1.0]
             ),
             alignment=ft.alignment.center,
