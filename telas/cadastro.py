@@ -1,5 +1,5 @@
 import flet as ft
-from database import Database
+from data.database import Database
 import logging
 
 logging.basicConfig(

@@ -1,7 +1,7 @@
 import flet as ft
 import logging
 import json
-from database import Database
+from data.database import Database
 
 logging.basicConfig(
     filename='app.log', 

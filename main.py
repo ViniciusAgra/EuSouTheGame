@@ -8,7 +8,7 @@ from telas.personalizado import PersonalizadoScreen
 from telas.splash import SplashScreen
 from telas.temas import TemasScreen
 from telas.jogo import JogoScreen
-from database import Database
+from data.database import Database
 
 def main(page: ft.Page):
     db = Database()
@@ -23,7 +23,7 @@ def main(page: ft.Page):
         elif screen == "cadastro":
             CadastroScreen(page, navigate).show()
         elif screen == "jogo":
-            JogoScreen(page, navigate).show()
+            JogoScreen(page, navigate)
         elif screen == "login":
             LoginScreen(page, navigate).show()
         elif screen == "personalizado":

@@ -6,4 +6,4 @@ from .menu import MenuScreen
 from .personalizado import PersonalizadoScreen
 from .splash import SplashScreen
 from .temas import TemasScreen
-from database import Database
+from data.database import Database

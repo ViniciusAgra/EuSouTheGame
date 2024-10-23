@@ -1,7 +1,7 @@
 import flet as ft
 import json
 import logging
-from database import Database
+from data.database import Database
 
 class ConfiguraScreen:
     def __init__(self, page: ft.Page, navigate):

@@ -1,8 +1,11 @@
 import sqlite3
+import os
 import logging
 
 class Database:
-    def __init__(self, db_name='Perfis.db'):
+    def __init__(self, db_name='Perfis.db',db_path="data/"):
+        if db_path:
+            db_name = os.path.join(db_path, db_name)
         self.conn = sqlite3.connect(db_name)
         self.cursor = self.conn.cursor()
         logging.info("Conexão ao banco de dados estabelecida.")
