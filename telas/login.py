@@ -34,7 +34,7 @@ class LoginScreen:
             self.page.update()
 
     def save_current_user(self, username):
-        with open('user_data.json', 'w') as f:
+        with open('data/user_data.json', 'w') as f:
             json.dump({'current_user': username}, f)
 
     def on_menu_click(self, e):

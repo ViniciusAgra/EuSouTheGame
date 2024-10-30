@@ -14,7 +14,7 @@ class ConfiguraScreen:
 
     def load_current_user(self):
         try:
-            with open('user_data.json', 'r') as f:
+            with open('data/user_data.json', 'r') as f:
                 data = json.load(f)
                 return data.get('current_user', None)  # Retorna o usuário atual ou None
         except FileNotFoundError:
