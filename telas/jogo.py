@@ -27,7 +27,6 @@ class JogoScreen:
         self.navigate = navigate
         self.db = Database()
         self.acertos = 0
-        self.erros = 0
 
         self.build_ui()  # Constrói a interface
 
@@ -144,7 +143,7 @@ class JogoScreen:
         timer_thread.start()
 
     def handle_click_left(self, e: ft.ControlEvent):
-        self.errou()
+        self.pulou()
 
     def handle_click_right(self, e: ft.ControlEvent):
         self.acertou()
@@ -153,9 +152,8 @@ class JogoScreen:
         self.mudar_palavra()
         self.acertos += 1
 
-    def errou(self):
+    def pulou(self):
         self.mudar_palavra()
-        self.erros += 1
 
     def mudar_palavra(self):
         self.palavra_atual = random.choice(self.palavras_filme)
@@ -164,7 +162,7 @@ class JogoScreen:
 
     def countdown(self, t):
         while t:
-            mins, secs = divmod(t, 60) 
+            mins, secs = divmod(t, 60)
             timer = '{:02d}:{:02d}'.format(mins, secs)
             self.timer_text.value = f"Tempo restante: {timer}"
             self.page.update()
@@ -172,4 +170,77 @@ class JogoScreen:
             t -= 1
 
         self.timer_text.value = "Tempo esgotado!"
+        self.page.update()
+        self.show_end_screen()  # Chama a tela de finalização
+
+    def show_end_screen(self):
+        # Remove os elementos atuais da página
+        self.page.controls.clear()
+
+        # Mensagem de fim da rodada
+        end_message = ft.Text(
+            "Fim da Rodada",
+            size=40,
+            weight=ft.FontWeight.BOLD,
+            color="#8c68ca",
+        )
+
+        # Mostra os acertos
+        score_message = ft.Text(
+            f"Acertos: {self.acertos}",
+            size=30,
+            color="#8c68ca",
+        )
+
+        # Botão para voltar ao menu
+        back_to_menu_button = ft.ElevatedButton(
+            text="Voltar Ao Menu",
+            on_click=lambda e: self.navigate("temas"),
+            bgcolor="#93e4ed",
+            color="white",
+        )
+
+        # Botão para tentar novamente
+        retry_button = ft.ElevatedButton(
+            text="Tentar Novamente",
+            on_click=lambda e: self.restart_game(),
+            bgcolor="#e7baff",
+            color="white",
+        )
+
+        # Container central
+        end_screen_container = ft.Container(
+            content=ft.Column(
+                controls=[
+                    end_message,
+                    score_message,
+                    ft.Row(
+                        controls=[back_to_menu_button, retry_button],
+                        alignment=ft.MainAxisAlignment.CENTER,
+                    ),
+                ],
+                alignment=ft.MainAxisAlignment.CENTER,
+                horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            ),
+            alignment=ft.alignment.center,
+            expand=True,
+            gradient=ft.LinearGradient(
+                begin=ft.Alignment(0, -1),
+                end=ft.Alignment(0, 1),
+                colors=["#e5f6f8", "#f2feff"],
+            ),
+        )
+
+        self.page.add(end_screen_container)  # Adiciona a interface à página
+        self.page.update()
+
+    def restart_game(self):
+        # Reinicia os valores necessários
+        self.acertos = 0
+        self.timer = self.tempo_segundos
+        self.palavra_atual = random.choice(self.palavras_filme)
+
+        # Limpa e recria a interface inicial
+        self.page.controls.clear()
+        self.build_ui()
         self.page.update()
