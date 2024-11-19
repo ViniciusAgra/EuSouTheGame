@@ -1,13 +1,33 @@
 import flet as ft
 import random
 import json
+from data.database import Database
 import time
-import threading  # Para executar o countdown em uma thread separada
+import threading
+import pygame
+
+def game_music():   
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load("audio\StartSound.mp3")
+    pygame.mixer.music.set_volume(1)
+    pygame.mixer.music.play(1)
+    
+    while pygame.mixer.music.get_busy():
+        time.sleep(0.1)  # Espera 100ms antes de checar novamente
+
+    # Para a segunda música
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load("audio\MTQuemSouEu.mp3")
+    pygame.mixer.music.set_volume(0.2)
+    pygame.mixer.music.play(-1)
 
 class JogoScreen:
     def __init__(self, page: ft.Page, navigate):
         self.page = page
         self.navigate = navigate
+        self.db = Database()
+        self.acertos = 0
+        self.erros = 0
 
         self.build_ui()  # Constrói a interface
 
@@ -22,18 +42,22 @@ class JogoScreen:
             expand=True,  # Preenche todo o espaço disponível
         )
 
-        # Carregar palavras do JSON
+
         with open('data/temas_base.json', 'r', encoding='utf-8') as f:
             self.temas = json.load(f)
 
-        # Selecionar tema 'filme'
         self.palavras_filme = self.temas['filme']['palavras']
         self.palavra_atual = random.choice(self.palavras_filme)
 
-        # Timer de 60 segundos
-        self.timer = 60
 
-        # Container para o banner superior
+        with open('data/user_data.json', 'r', encoding='utf-8') as f:
+            self.user = json.load(f)
+            self.usuario_atual = self.user['current_user']
+            self.tempo_segundos = self.db.get_tempo_partida(self.usuario_atual)
+
+        self.timer = self.tempo_segundos
+
+
         header_banner = ft.Container(
             gradient=ft.LinearGradient(
                 begin=ft.Alignment(-1, 0),
@@ -104,6 +128,17 @@ class JogoScreen:
 
         self.page.add(main_stack)  # Adiciona a interface à página
 
+        music_thread = threading.Thread(target=game_music)
+        music_thread.start()
+
+        for i in range(3, -1, -1):  # Contagem de 3 a 1
+            self.palavra_container.content = ft.Text(str(i), size=60, color="#ff0000")
+            self.page.update()
+            time.sleep(1)  # Pausa de 1 segundo entre os números
+
+        self.palavra_container.content = ft.Text(self.palavra_atual, size=40, color="#8c68ca")  # Mostra a primeira palavra
+        self.page.update()
+
         # Inicia o timer em uma thread separada
         timer_thread = threading.Thread(target=self.countdown, args=(self.timer,))
         timer_thread.start()
@@ -116,9 +151,11 @@ class JogoScreen:
 
     def acertou(self):
         self.mudar_palavra()
+        self.acertos += 1
 
     def errou(self):
         self.mudar_palavra()
+        self.erros += 1
 
     def mudar_palavra(self):
         self.palavra_atual = random.choice(self.palavras_filme)

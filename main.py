@@ -17,24 +17,8 @@ pygame.mixer.init()
 
 def start_music():
     pygame.mixer.music.load("audio/MTQuemSouEu.mp3")  
-    pygame.mixer.music.set_volume(0.1)  
+    pygame.mixer.music.set_volume(0.2)  
     pygame.mixer.music.play(-1)  
-
-def game_music():
-    
-    pygame.mixer.music.stop()
-    pygame.mixer.music.load("audio\MTQuemSouEu.mp3")
-    pygame.mixer.music.set_volume(1)
-    pygame.mixer.music.play(1)
-    
-    while pygame.mixer.music.get_busy():
-        time.sleep(0.1)  # Espera 100ms antes de checar novamente
-
-    # Para a segunda música
-    pygame.mixer.music.stop()
-    pygame.mixer.music.load("audio\MTQuemSouEu.mp3")
-    pygame.mixer.music.set_volume(1)
-    pygame.mixer.music.play(-1)
 
 def main(page: ft.Page):
     db = Database()
@@ -52,7 +36,6 @@ def main(page: ft.Page):
             CadastroScreen(page, navigate).show()
         elif screen == "jogo":
             JogoScreen(page, navigate)
-            game_music()  # Música para o jogo
         elif screen == "login":
             LoginScreen(page, navigate).show()
         elif screen == "personalizado":
