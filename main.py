@@ -24,7 +24,7 @@ def main(page: ft.Page):
     db = Database()
     start_music()  # Inicia a música padrão ao abrir o app
 
-    def navigate(screen, **kwargs):
+    def navigate(screen):
         page.clean()
         if screen == "splash":
             SplashScreen(page, navigate).show()
@@ -35,7 +35,7 @@ def main(page: ft.Page):
         elif screen == "cadastro":
             CadastroScreen(page, navigate).show()
         elif screen == "jogo":
-            JogoScreen(page, navigate)
+            JogoScreen(page, navigate).show()
         elif screen == "login":
             LoginScreen(page, navigate).show()
         elif screen == "personalizado":

@@ -40,12 +40,15 @@ class JogoScreen:
             ),
             expand=True,  # Preenche todo o espaço disponível
         )
-
-
+        
+        with open('data/user_data.json', 'r', encoding='utf-8') as f:
+            self.tag = json.load(f)
+        self.tema_atual = self.tag['temaatual']
+        
         with open('data/temas_base.json', 'r', encoding='utf-8') as f:
             self.temas = json.load(f)
 
-        self.palavras_filme = self.temas['filme']['palavras']
+        self.palavras_filme = self.temas[self.tema_atual]['palavras']
         self.palavra_atual = random.choice(self.palavras_filme)
 
 

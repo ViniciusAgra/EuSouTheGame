@@ -1,11 +1,12 @@
 import flet as ft
+import json
 
 class TemasScreen:
     def __init__(self, page: ft.Page, navigate):
         self.page = page
         self.navigate = navigate
 
-    def create_category_button(self, image_src):
+    def create_category_button(self, image_src, tag):
         return ft.TextButton(
             content=ft.Container(
                 width=150,
@@ -28,8 +29,11 @@ class TemasScreen:
             )
         )
 
-    def on_category_button_click(self, e):
-        self.navigate("jogo")  # Navegação para a página "jogo.py"
+    def on_category_button_click(self,e):
+        print(dir(e.control))
+        self.navigate("jogo")
+        with open('data/user_data.json', 'w') as f:
+            json.dump({'temaatual':"" }, f)
 
     def show(self):
         self.page.title = "Categorias"
@@ -51,20 +55,20 @@ class TemasScreen:
             alignment=ft.MainAxisAlignment.CENTER
         )
 
-        # Criação dos botões de categoria em um layout 2x2
+        # Criação dos botões
         grid = ft.Column(
             controls=[
                 ft.Row(
                     controls=[
-                        self.create_category_button("img/categoria_animais.png"),
-                        self.create_category_button("img/categoria_filmes.png"),
+                        self.create_category_button("img/categoria_animais.png","animais"),
+                        self.create_category_button("img/categoria_filmes.png","filme"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
                 ft.Row(
                     controls=[
-                        self.create_category_button("img/categoria_acao.png"),
-                        self.create_category_button("img/categoria_desenhos.png"),
+                        self.create_category_button("img/categoria_acao.png","ação"),
+                        self.create_category_button("img/categoria_desenhos.png","desenho"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
