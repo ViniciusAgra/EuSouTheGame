@@ -6,7 +6,7 @@ from telas.cadastro import CadastroScreen
 from telas.configura import ConfiguraScreen
 from telas.login import LoginScreen
 from telas.menu import MenuScreen
-from telas.personalizado import PersonalizadoScreen
+from telas.rank import RankScreen
 from telas.splash import SplashScreen
 from telas.temas import TemasScreen
 from telas.jogo import JogoScreen
@@ -38,8 +38,8 @@ def main(page: ft.Page):
             JogoScreen(page, navigate).show()
         elif screen == "login":
             LoginScreen(page, navigate).show()
-        elif screen == "personalizado":
-            PersonalizadoScreen(page, navigate).show()
+        elif screen == "rank":
+            RankScreen(page, navigate).show()
         elif screen == "temas":
             TemasScreen(page, navigate).show()
 

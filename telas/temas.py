@@ -120,8 +120,8 @@ class TemasScreen:
             content=ft.Row(
                 controls=[
                     ft.TextButton(
-                        "Personalizado",
-                        on_click=self.on_personalizado_click,
+                        "Rank",
+                        on_click=self.on_rank_click,
                         style=ft.ButtonStyle(color="black")
                     ),
                     ft.TextButton(
@@ -141,11 +141,11 @@ class TemasScreen:
             bgcolor="#93e4ed",
         )
 
-    def on_personalizado_click(self, e):
+    def on_rank_click(self, e):
         self.navigate("personalizado")
 
     def on_temas_click(self, e):
-        self.navigate("temas")
+        self.navigate("rank")
 
     def on_configura_click(self, e):
         self.navigate("configura")

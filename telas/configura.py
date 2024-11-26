@@ -58,24 +58,7 @@ class ConfiguraScreen:
                 controls=[
                     ft.Image(src="img/musiclogo.png", width=50, height=50),
                     ft.Text("Música", color="black"),
-                    ft.Switch(value=False)
-                ],
-                spacing=10,
-                alignment=ft.MainAxisAlignment.CENTER
-            ),
-            bgcolor="#95e3eb",
-            border_radius=10,
-            padding=10,
-            margin=10
-        )
-
-    def create_container_vibrar(self):
-        return ft.Container(
-            content=ft.Row(
-                controls=[
-                    ft.Image(src="img/vibrarlogo.png", width=50, height=50),
-                    ft.Text("Vibrar", color="black"),
-                    ft.Switch(value=False)
+                    ft.Switch(value=True)
                 ],
                 spacing=10,
                 alignment=ft.MainAxisAlignment.CENTER
@@ -106,14 +89,12 @@ class ConfiguraScreen:
 
         container1 = self.create_container_duracao()
         container2 = self.create_container_musica()
-        container3 = self.create_container_vibrar()
 
         content = ft.Column(
             controls=[
                 banner,
                 container1,
                 container2,
-                container3,
                 ft.Row(
                     controls=[
                         ft.GestureDetector(
@@ -150,8 +131,8 @@ class ConfiguraScreen:
             content=ft.Row(
                 controls=[
                     ft.TextButton(
-                        "Personalizado",
-                        on_click=self.on_personalizado_click,
+                        "Rank",
+                        on_click=self.on_rank_click,
                         style=ft.ButtonStyle(color="black")
                     ),
                     ft.TextButton(
@@ -174,8 +155,8 @@ class ConfiguraScreen:
     def on_close_click(self, e):
         self.page.window_close()
 
-    def on_personalizado_click(self, e):
-        self.navigate("personalizado")
+    def on_rank_click(self, e):
+        self.navigate("rank")
 
     def on_temas_click(self, e):
         self.navigate("temas")

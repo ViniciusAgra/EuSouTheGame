@@ -1,6 +1,6 @@
 import flet as ft
 
-class PersonalizadoScreen:
+class RankScreen:
     def __init__(self, page: ft.Page, navigate):
         self.page = page
         self.navigate = navigate
@@ -134,8 +134,8 @@ class PersonalizadoScreen:
             content=ft.Row(
                 controls=[
                     ft.TextButton(
-                        "Personalizado",
-                        on_click=self.on_personalizado_click,
+                        "Rank",
+                        on_click=self.on_rank_click,
                         style=ft.ButtonStyle(color="purple")
                     ),
                     ft.TextButton(
@@ -159,8 +159,8 @@ class PersonalizadoScreen:
         self.page.window_close()
         
     # Métodos para navegar entre telas
-    def on_personalizado_click(self, e):
-        self.navigate("personalizado")  # Substitua pelo método de navegação correto
+    def on_rank_click(self, e):
+        self.navigate("rank")  # Substitua pelo método de navegação correto
 
     def on_temas_click(self, e):
         self.navigate("temas")  # Substitua pelo método de navegação correto

@@ -3,7 +3,7 @@ from .configura import ConfiguraScreen
 from .jogo import JogoScreen
 from .login import LoginScreen
 from .menu import MenuScreen
-from .personalizado import PersonalizadoScreen
+from .rank import RankScreen
 from .splash import SplashScreen
 from .temas import TemasScreen
 from data.database import Database
