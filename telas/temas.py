@@ -11,29 +11,36 @@ class TemasScreen:
             content=ft.Container(
                 width=150,
                 height=150,
-                bgcolor="transparent",  # Fundo transparente para ver a imagem de fundo
+                bgcolor="transparent",
                 border_radius=10,
                 padding=10,
                 margin=10,
-                # Utilizando a imagem como fundo
                 content=ft.Stack(
                     controls=[
                         ft.Image(src=image_src, fit=ft.ImageFit.COVER, width=150, height=150),
                     ]
                 )
             ),
+            data=tag,  # Armazena o tema correspondente no atributo `tag`
             on_click=self.on_category_button_click,
             style=ft.ButtonStyle(
                 shape=ft.RoundedRectangleBorder(radius=10),
-                overlay_color="transparent"  # Remove a cor de fundo ao passar o mouse
+                overlay_color="transparent"
             )
         )
 
-    def on_category_button_click(self,e):
-        print(dir(e.control))
+    def on_category_button_click(self, e):
+        tema_selecionado = e.control.data
+
+        with open('data/user_data.json', 'r', encoding='utf-8') as f:
+            user_data = json.load(f)
+
+        user_data['temaatual'] = tema_selecionado  # Altera o tema atual
+
+        with open('data/user_data.json', 'w', encoding='utf-8') as f:
+            json.dump(user_data, f, ensure_ascii=False, indent=4)
+
         self.navigate("jogo")
-        with open('data/user_data.json', 'w') as f:
-            json.dump({'temaatual':"" }, f)
 
     def show(self):
         self.page.title = "Categorias"

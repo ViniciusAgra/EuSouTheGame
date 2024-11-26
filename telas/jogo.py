@@ -6,6 +6,7 @@ import time
 import threading
 import pygame
 
+
 def game_music():   
     pygame.mixer.music.stop()
     pygame.mixer.music.load("audio\StartSound.mp3")
@@ -21,6 +22,7 @@ def game_music():
     pygame.mixer.music.set_volume(0.2)
     pygame.mixer.music.play(-1)
 
+
 class JogoScreen:
     def __init__(self, page: ft.Page, navigate):
         self.page = page
@@ -32,7 +34,7 @@ class JogoScreen:
 
     def build_ui(self):
         # Adicionando o gradiente de fundo
-        gradient_background = ft.Container(
+        self.gradient_background = ft.Container(
             gradient=ft.LinearGradient(
                 begin=ft.Alignment(0, -1),
                 end=ft.Alignment(0, 1),
@@ -51,14 +53,12 @@ class JogoScreen:
         self.palavras_filme = self.temas[self.tema_atual]['palavras']
         self.palavra_atual = random.choice(self.palavras_filme)
 
-
         with open('data/user_data.json', 'r', encoding='utf-8') as f:
             self.user = json.load(f)
             self.usuario_atual = self.user['current_user']
             self.tempo_segundos = self.db.get_tempo_partida(self.usuario_atual)
 
         self.timer = self.tempo_segundos
-
 
         header_banner = ft.Container(
             gradient=ft.LinearGradient(
@@ -95,6 +95,7 @@ class JogoScreen:
         )
 
         # Criar GestureDetectors invisíveis para cada metade da tela
+        # GestureDetectors que ocupam metade da tela
         left_detector = ft.GestureDetector(
             content=ft.Container(
                 expand=True,
@@ -111,10 +112,30 @@ class JogoScreen:
             on_tap=self.handle_click_right,
         )
 
+        # Row para dividir a tela em duas áreas
+        gesture_row = ft.Row(
+            controls=[
+                ft.Container(
+                    content=left_detector,
+                    expand=True,  # Garante que o detector esquerdo ocupa metade da largura
+                    bgcolor=ft.colors.TRANSPARENT,
+                ),
+                ft.Container(
+                    content=right_detector,
+                    expand=True,  # Garante que o detector direito ocupa metade da largura
+                    bgcolor=ft.colors.TRANSPARENT,
+                ),
+            ],
+            expand=True,  # Faz a Row ocupar todo o espaço
+            alignment=ft.MainAxisAlignment.CENTER,
+            vertical_alignment=ft.CrossAxisAlignment.STRETCH,
+        )
+
+
         # Stack para organizar a interface
         main_stack = ft.Stack(
             controls=[
-                gradient_background,  # Gradiente de fundo
+                self.gradient_background,  # Gradiente de fundo
                 header_banner,        # Banner no topo
                 self.palavra_container,
                 # Adiciona o banner na parte inferior
@@ -122,8 +143,7 @@ class JogoScreen:
                     content=banner,
                     alignment=ft.alignment.bottom_center,
                 ),
-                left_detector,  # Detector para a esquerda
-                right_detector  # Detector para a direita
+                gesture_row,
             ],
             expand=True,
         )
@@ -148,20 +168,40 @@ class JogoScreen:
     def handle_click_left(self, e: ft.ControlEvent):
         self.pulou()
 
+
     def handle_click_right(self, e: ft.ControlEvent):
         self.acertou()
 
     def acertou(self):
+        self.flash_color("#00FF00")  # Verde para acerto
         self.mudar_palavra()
         self.acertos += 1
 
     def pulou(self):
+        self.flash_color("#FF0000")  # Vermelho para pulo
         self.mudar_palavra()
 
     def mudar_palavra(self):
         self.palavra_atual = random.choice(self.palavras_filme)
         self.palavra_container.content = ft.Text(self.palavra_atual, size=40, color="#8c68ca")
         self.page.update()
+    
+    def flash_color(self, color):
+        self.gradient_background.bgcolor = color
+        self.gradient_background.gradient = None  # Remove gradiente para aplicar cor sólida
+        self.page.update()
+
+        def reset_background():
+            time.sleep(0.3)
+            self.gradient_background.bgcolor = None
+            self.gradient_background.gradient = ft.LinearGradient(
+                begin=ft.Alignment(0, -1),
+                end=ft.Alignment(0, 1),
+                colors=["#e5f6f8", "#f2feff"],
+            )
+            self.page.update()
+
+        threading.Thread(target=reset_background).start()
 
     def countdown(self, t):
         while t:
