@@ -1,26 +1,23 @@
 import flet as ft
 import json
 
-popup_shown = False
-
-class TemasScreen:
+class MoreScreen:
     def __init__(self, page: ft.Page, navigate):
         self.page = page
         self.navigate = navigate
-        global popup_shown
 
-    def create_category_button(self, image_src, tag):
+    def create_category_button(self, nome, tag):
         return ft.TextButton(
             content=ft.Container(
-                width=150,
-                height=150,
-                bgcolor="transparent",
+                width=100,
+                height=100,
+                bgcolor="Pink",
                 border_radius=10,
                 padding=10,
                 margin=10,
                 content=ft.Stack(
                     controls=[
-                        ft.Image(src=image_src, fit=ft.ImageFit.COVER, width=150, height=150),
+                        ft.Text(nome),
                     ]
                 )
             ),
@@ -45,48 +42,8 @@ class TemasScreen:
 
         self.navigate("jogo")
 
-    def create_how_to_play_popup(self):
-        return ft.AlertDialog(
-            modal=True,
-            title=ft.Text("Como Jogar:", size=24, weight="bold"),
-            content=ft.Column(
-                controls=[
-                    ft.Text("• Selecione um tema"),
-                    ft.Text("• Coloque o celular com a tela virada ao contrário antes da contagem inicial acabar"),
-                    ft.Text("• Clique do seu lado Esquerdo (Direito da tela) para contabilizar um acerto"),
-                    ft.Text("• Clique do seu lado Direito (Esquerdo da tela) para pular a palavra"),
-                ],
-                alignment=ft.MainAxisAlignment.START,
-                spacing=10,
-                tight=True,
-            ),
-            actions=[
-                ft.TextButton(
-                    "Entendi",
-                    on_click=self.close_popup
-                ),
-            ],
-            actions_alignment=ft.MainAxisAlignment.END,
-        )
-
-    def close_popup(self, e):
-        self.page.dialog.open = False
-        self.page.update()
-
-    def show_how_to_play_popup(self):
-        # Verifica se o popup já foi mostrado
-        if not self.popup_shown:
-            self.popup_shown = True  # Marca como exibido
-            popup = self.create_how_to_play_popup()
-            self.page.dialog = popup
-            self.page.dialog.open = True
-            self.page.update()
-
-
     def show(self):
         self.page.title = "Categorias"
-        self.page.dialog = self.create_how_to_play_popup()
-        self.page.dialog.open = True  # Abre automaticamente
         self.page.update()
 
         # Banner com o título "CATEGORIAS"
@@ -109,20 +66,31 @@ class TemasScreen:
             controls=[
                 ft.Row(
                     controls=[
-                        self.create_category_button("img/categoria_animais.png", "animais"),
-                        self.create_category_button("img/categoria_filmes.png", "filme"),
+                        self.create_category_button("Comida", "comida"),
+                        self.create_category_button("Cidades", "cidades"),
+                        self.create_category_button("Musica", "musica"),
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER
+                ),
+                
+                ft.Row(
+                    controls=[
+                        self.create_category_button("Esporte", "esporte"),
+                        self.create_category_button("Tecnologia", "tecnologia"),
+                        self.create_category_button("Natureza", "natureza"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
                 ft.Row(
                     controls=[
-                        self.create_category_button("img/categoria_acao.png", "ação"),
-                        self.create_category_button("img/categoria_desenhos.png", "desenho"),
+                        self.create_category_button("Historia", "historia"),
+                        self.create_category_button("Arte", "arte"),
+                        self.create_category_button("Literatura", "literatura"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
             ],
-            alignment=ft.MainAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.CENTER
         )
 
         content = ft.Column(

@@ -1,12 +1,11 @@
 import flet as ft
 import pygame
-import time
 
 from telas.cadastro import CadastroScreen
 from telas.configura import ConfiguraScreen
 from telas.login import LoginScreen
 from telas.menu import MenuScreen
-from telas.rank import RankScreen
+from telas.more import MoreScreen
 from telas.splash import SplashScreen
 from telas.temas import TemasScreen
 from telas.jogo import JogoScreen
@@ -22,7 +21,7 @@ def start_music():
 
 def main(page: ft.Page):
     db = Database()
-    start_music()  # Inicia a música padrão ao abrir o app
+    start_music()  
 
     def navigate(screen):
         page.clean()
@@ -38,8 +37,8 @@ def main(page: ft.Page):
             JogoScreen(page, navigate).show()
         elif screen == "login":
             LoginScreen(page, navigate).show()
-        elif screen == "rank":
-            RankScreen(page, navigate).show()
+        elif screen == "more":
+            MoreScreen(page, navigate).show()
         elif screen == "temas":
             TemasScreen(page, navigate).show()
 
