@@ -6,18 +6,18 @@ class MoreScreen:
         self.page = page
         self.navigate = navigate
 
-    def create_category_button(self, nome, tag):
+    def create_category_button(self, image_src, tag):
         return ft.TextButton(
             content=ft.Container(
                 width=100,
                 height=100,
-                bgcolor="Pink",
+                bgcolor= "#93e4ed",
                 border_radius=10,
                 padding=10,
                 margin=10,
                 content=ft.Stack(
                     controls=[
-                        ft.Text(nome),
+                        ft.Image(src=image_src, fit=ft.ImageFit.COVER, width=150, height=150),
                     ]
                 )
             ),
@@ -66,26 +66,26 @@ class MoreScreen:
             controls=[
                 ft.Row(
                     controls=[
-                        self.create_category_button("Comida", "comida"),
-                        self.create_category_button("Cidades", "cidades"),
-                        self.create_category_button("Musica", "musica"),
+                        self.create_category_button("img/categoria_comida.png", "comida"),
+                        self.create_category_button("img/categoria_cidades.png", "cidades"),
+                        self.create_category_button("img/categoria_musica.png", "musica"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
                 
                 ft.Row(
                     controls=[
-                        self.create_category_button("Esporte", "esporte"),
-                        self.create_category_button("Tecnologia", "tecnologia"),
-                        self.create_category_button("Natureza", "natureza"),
+                        self.create_category_button("img/categoria_esporte.png", "esporte"),
+                        self.create_category_button("img/categoria_tecnologia.png", "tecnologia"),
+                        self.create_category_button("img/categoria_natureza.png", "natureza"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
                 ft.Row(
                     controls=[
-                        self.create_category_button("Historia", "historia"),
-                        self.create_category_button("Arte", "arte"),
-                        self.create_category_button("Literatura", "literatura"),
+                        self.create_category_button("img/categoria_historia.png", "historia"),
+                        self.create_category_button("img/categoria_arte.png", "arte"),
+                        self.create_category_button("img/categoria_literatura.png", "literatura"),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 ),
